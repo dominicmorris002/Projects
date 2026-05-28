@@ -1,3 +1,0 @@
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/dac.c:30:6:MX_DAC1_Init	5
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/dac.c:87:6:HAL_DAC_MspInit	3
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/dac.c:127:6:HAL_DAC_MspDeInit	2

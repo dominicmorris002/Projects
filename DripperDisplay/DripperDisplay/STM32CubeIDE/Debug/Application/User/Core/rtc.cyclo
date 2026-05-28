@@ -1,3 +1,0 @@
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/rtc.c:30:6:MX_RTC_Init	6
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/rtc.c:117:6:HAL_RTC_MspInit	3
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/rtc.c:158:6:HAL_RTC_MspDeInit	2

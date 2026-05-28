@@ -1,3 +1,0 @@
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/lptim.c:30:6:MX_LPTIM2_Init	2
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/lptim.c:62:6:HAL_LPTIM_MspInit	3
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/lptim.c:110:6:HAL_LPTIM_MspDeInit	2

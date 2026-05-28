@@ -1,7 +1,0 @@
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/octospi.c:37:6:MX_OCTOSPI1_Init	72	static
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/octospi.c:106:6:HAL_OSPI_MspInit	288	static
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/octospi.c:187:6:HAL_OSPI_MspDeInit	16	static
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/octospi.c:227:9:OSPI_DLYB_Enable	40	static
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/octospi.c:271:16:ospi_memory_reset	24	static
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/octospi.c:316:16:OSPI_NOR_EnterSOPIMode	32	static
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/octospi.c:382:9:OSPI_NOR_EnableMemoryMappedMode	24	static

@@ -1,3 +1,0 @@
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/jpeg.c:32:6:MX_JPEG_Init	8	static
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/jpeg.c:53:6:HAL_JPEG_MspInit	32	static
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/jpeg.c:136:6:HAL_JPEG_MspDeInit	16	static

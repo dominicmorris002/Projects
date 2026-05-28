@@ -1,3 +1,0 @@
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/dma2d.c:30:6:MX_DMA2D_Init	8	static
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/dma2d.c:56:6:HAL_DMA2D_MspInit	24	static
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/dma2d.c:76:6:HAL_DMA2D_MspDeInit	16	static

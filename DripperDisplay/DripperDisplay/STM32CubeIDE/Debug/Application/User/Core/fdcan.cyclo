@@ -1,3 +1,0 @@
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/fdcan.c:30:6:MX_FDCAN1_Init	2
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/fdcan.c:68:6:HAL_FDCAN_MspInit	3
-C:/Projects/DripperDisplay/DripperDisplay/Core/Src/fdcan.c:109:6:HAL_FDCAN_MspDeInit	2
