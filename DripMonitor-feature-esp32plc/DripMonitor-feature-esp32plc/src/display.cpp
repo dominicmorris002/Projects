@@ -12,6 +12,7 @@
 #include <iomanip>
 #include <cmath>
 
+#include <zephyr/device.h>
 #include <zephyr/logging/log.h>
 
 #include "../include/LK204.hpp"
@@ -86,6 +87,7 @@ static double       buf_dripCtrlKdSP;                           // PID Kd setpoi
 static bool         buf_dripShDnEnable;                            // Low drip rate shutdown status to modify
 static int          buf_dripShDnDelay;                          // Low drip rate shutdown delay to show and modify, minutes
 static std::string  str_version = Version::getVersion();        // program version number
+static bool         sts_displayOk;                              // false if LCD I2C is absent
 
 // Nav buttons
 // type             // variable                     // value    // comment
@@ -320,6 +322,13 @@ static void noop(){}
  * 
  **************************************************************/
 static void displayInit(){
+    sts_displayOk = false;
+    if (!device_is_ready(lcdDev.bus)) {
+        LOG_WRN("LCD I2C bus not ready — local display disabled");
+        return;
+    }
+
+    sts_displayOk = true;
     // display setup
     lcd.init(20,4);
     lcd.setAutoBacklight(LK204::OMIT_LIGHT_BOTH);
@@ -666,6 +675,11 @@ static void displayMain(){
     displayInit();
 
     while(1){
+        if (!sts_displayOk) {
+            k_sleep(K_SECONDS(1));
+            continue;
+        }
+
         uptime = k_uptime_get();
 
         menuSize = getMenuSize();

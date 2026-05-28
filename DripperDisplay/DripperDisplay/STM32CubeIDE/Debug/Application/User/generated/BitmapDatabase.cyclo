@@ -1,0 +1,2 @@
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/generated/images/src/BitmapDatabase.cpp:81:37:const touchgfx::Bitmap::BitmapData* BitmapDatabase::getInstance()	1
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/generated/images/src/BitmapDatabase.cpp:86:10:uint16_t BitmapDatabase::getInstanceSize()	1

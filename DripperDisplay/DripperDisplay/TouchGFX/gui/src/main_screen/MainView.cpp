@@ -1,6 +1,4 @@
 #include <gui/main_screen/MainView.hpp>
-#include "modbus_master.h"
-   // ← ADD at the top with other includes
 
 #ifdef TARGET_STM32
 #  include "stm32u5xx_hal.h"
@@ -35,9 +33,8 @@ void MainView::updateDripRate(int value)
 void MainView::updateSetpoint(int value)
 {
     setpoint = value;
-    // Reuse Number_1 since Number_2 doesn't exist yet
-    Unicode::snprintf(Number_1Buffer, NUMBER_1_SIZE, "%d", setpoint);
-    Number_1.invalidate();
+    Unicode::snprintf(textArea6Buffer, TEXTAREA6_SIZE, "%d", setpoint);
+    textArea6.invalidate();
 }
 
 // ── Status text ────────────────────────────────────────────
@@ -85,8 +82,21 @@ void MainView::RunOilerPress()
 
 void MainView::handlePollResult(const MB_PollResult &result)
 {
-    // Update drip rate display (divide out the ×10 scaling)
+    static bool lastOk = false;
+
+    if (!result.ok) {
+        if (lastOk) {
+            updateStatusText("COMM ERR");
+        }
+        lastOk = false;
+        return;
+    }
+    lastOk = true;
+
     updateDripRate(result.drip_rate / 10);
+    if (result.drip_rate_sp >= 50) {
+        updateSetpoint(result.drip_rate_sp / 10);
+    }
 
     // Sync run state from hardware (handles remote stop / fault stop)
     oilerRunning = (result.status == MB_STATUS_RUNNING);

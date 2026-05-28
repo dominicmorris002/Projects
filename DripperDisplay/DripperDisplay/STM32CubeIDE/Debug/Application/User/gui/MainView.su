@@ -1,0 +1,15 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	16	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	16	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	16	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	16	static
+../../TouchGFX/gui/include/gui/main_screen/MainView.hpp:12:13:MainView::~MainView()	16	static
+../../TouchGFX/gui/include/gui/main_screen/MainView.hpp:12:13:virtual MainView::~MainView()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/main_screen/MainView.cpp:7:1:MainView::MainView()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/main_screen/MainView.cpp:12:6:virtual void MainView::setupScreen()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/main_screen/MainView.cpp:19:6:virtual void MainView::tearDownScreen()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/main_screen/MainView.cpp:26:6:void MainView::updateDripRate(int)	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/main_screen/MainView.cpp:33:6:void MainView::updateSetpoint(int)	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/main_screen/MainView.cpp:42:6:void MainView::updateStatusText(const char*)	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/main_screen/MainView.cpp:54:6:virtual void MainView::PrimeOilerPress()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/main_screen/MainView.cpp:61:6:virtual void MainView::RunOilerPress()	24	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/main_screen/MainView.cpp:83:6:void MainView::handlePollResult(const MB_PollResult&)	16	static

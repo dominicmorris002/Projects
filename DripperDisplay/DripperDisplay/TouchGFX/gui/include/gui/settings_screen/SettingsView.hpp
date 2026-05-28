@@ -20,6 +20,8 @@ public:
     virtual void ShutdownDelayPlusPress();
     virtual void PumpShutdownPress();
 
+    void loadFromPlc();
+
 private:
     int dripRateSetpoint;
     int shutdownDelay;

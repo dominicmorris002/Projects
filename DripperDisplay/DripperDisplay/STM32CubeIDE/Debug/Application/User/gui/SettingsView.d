@@ -47,6 +47,7 @@ Application/User/gui/SettingsView.o: \
  ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
  ../../TouchGFX/gui/include/gui/settings_screen/SettingsPresenter.hpp \
  ../../TouchGFX/gui/include/gui/model/ModelListener.hpp \
+ ../../TouchGFX/gui/include/modbus_master.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
@@ -104,6 +105,7 @@ Application/User/gui/SettingsView.o: \
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 ../../TouchGFX/gui/include/gui/settings_screen/SettingsPresenter.hpp:
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:
+../../TouchGFX/gui/include/modbus_master.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:

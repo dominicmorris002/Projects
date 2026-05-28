@@ -18,7 +18,13 @@ public:
         model.tick();
         FrontendApplicationBase::handleTickEvent();
     }
-private:
+
+    void gotoProtection_Disable_Confirmation_ScreenNoTransition();
+
+protected:
+    touchgfx::Callback<FrontendApplication> protectionTransitionCallback;
+
+    void gotoProtection_Disable_Confirmation_ScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATION_HPP

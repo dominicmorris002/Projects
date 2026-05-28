@@ -827,6 +827,7 @@
 
  aliases {
   watchdog0 = &wdt0;
+  modbus0 = &modbus_rs485;
   uart-0 = &uart0;
   uart-485 = &uart2;
   i2c-0 = &i2c0;
@@ -842,10 +843,10 @@
  pinctrl-0 = <&uart0_default>;
  pinctrl-names = "default";
 };
-# 80 "C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/industrialshields/esp32_plc_21/esp32_plc_21_esp32_procpu.dts"
+# 81 "C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/industrialshields/esp32_plc_21/esp32_plc_21_esp32_procpu.dts"
 &uart2 {
  status = "okay";
- current-speed = <9600>;
+ current-speed = <19200>;
  pinctrl-0 = <&uart2_default>;
  pinctrl-names = "default";
 
@@ -914,7 +915,7 @@
   ds3231: ds3231-rtc {
    compatible = "maxim,ds3231-rtc";
    status = "okay";
-# 159 "C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/industrialshields/esp32_plc_21/esp32_plc_21_esp32_procpu.dts"
+# 160 "C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/industrialshields/esp32_plc_21/esp32_plc_21_esp32_procpu.dts"
    isw-gpios = <&gpio1 2 (1 << 0)>;
   };
  };

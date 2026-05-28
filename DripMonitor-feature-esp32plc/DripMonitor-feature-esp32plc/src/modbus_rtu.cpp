@@ -2,6 +2,7 @@
 
 #include "modbus_rtu.h"
 #include "dripper.hpp"
+#include "storage.hpp"
 
 #include <zephyr/kernel.h>
 #include <zephyr/modbus/modbus.h>
@@ -10,8 +11,8 @@
 LOG_MODULE_REGISTER(modbus_rtu, LOG_LEVEL_INF);
 
 // ── Register banks ─────────────────────────────────────────
-static uint16_t holding[3];   // HMI → PLC  (FC06 writes land here)
-static uint16_t inp_reg[4];   // PLC → HMI  (FC04 reads come from here)
+static uint16_t holding[5];   // HMI → PLC  (FC06 writes land here)
+static uint16_t inp_reg[6];   // PLC → HMI  (FC04 reads come from here)
 static int      iface = -1;
 
 // ── Modbus callbacks ───────────────────────────────────────
@@ -30,7 +31,7 @@ static int holding_reg_wr(uint16_t addr, uint16_t val)
     switch (addr) {
     case MB_HOLD_RUN:
         ocmd_sysRun = (val != 0);
-        LOG_INF("HMI → Run: %s", ocmd_sysRun ? "RUN" : "STOP");
+        LOG_INF("HMI write RUN register: %s", ocmd_sysRun ? "RUN" : "STOP");
         break;
 
     case MB_HOLD_DRIP_RATE_SP: {
@@ -53,6 +54,21 @@ static int holding_reg_wr(uint16_t addr, uint16_t val)
         }
         break;
 
+    case MB_HOLD_LOW_DRIP_SHDN_EN:
+        cfg_lowDripShDnEnable = (val != 0);
+        storageWrite(FS_LOW_DRIP_SHDN_ENABLE, &cfg_lowDripShDnEnable,
+                     sizeof(cfg_lowDripShDnEnable));
+        LOG_INF("HMI → low-drip shutdown protection: %s",
+                cfg_lowDripShDnEnable ? "ON" : "OFF");
+        break;
+
+    case MB_HOLD_LOW_DRIP_SHDN_DELAY:
+        cfg_lowDripShDnDelay = (int)val;
+        storageWrite(FS_LOW_DRIP_SHDN_DELAY, &cfg_lowDripShDnDelay,
+                     sizeof(cfg_lowDripShDnDelay));
+        LOG_INF("HMI → shutdown delay: %d min", cfg_lowDripShDnDelay);
+        break;
+
     default:
         break;
     }
@@ -71,6 +87,10 @@ static struct modbus_user_callbacks cbs;
 // ── Init ───────────────────────────────────────────────────
 int modbus_rtu_init(void)
 {
+    if (iface >= 0) {
+        return 0;
+    }
+
     cbs.holding_reg_rd = holding_reg_rd;
     cbs.holding_reg_wr = holding_reg_wr;
     cbs.input_reg_rd   = input_reg_rd;
@@ -86,7 +106,11 @@ int modbus_rtu_init(void)
 
     iface = modbus_iface_get_by_name("modbus0");
     if (iface < 0) {
-        LOG_ERR("modbus0 interface not found (%d) — check DTS alias", iface);
+        iface = modbus_iface_get_by_name("modbus_rs485");
+    }
+    if (iface < 0) {
+        LOG_ERR("Modbus serial iface not found (%d) — add aliases { modbus0 = &modbus_rs485; }",
+                iface);
         return iface;
     }
 
@@ -100,6 +124,8 @@ int modbus_rtu_init(void)
     holding[MB_HOLD_RUN]          = 0u;
     holding[MB_HOLD_DRIP_RATE_SP] = (uint16_t)(cfg_dripRate * 10.0);
     holding[MB_HOLD_MODE]         = 0u;
+    holding[MB_HOLD_LOW_DRIP_SHDN_EN] = cfg_lowDripShDnEnable ? 1u : 0u;
+    holding[MB_HOLD_LOW_DRIP_SHDN_DELAY] = (uint16_t)cfg_lowDripShDnDelay;
 
     LOG_INF("Modbus RTU server ready  node_id=%d  baud=19200  parity=E",
             MODBUS_NODE_ID);
@@ -133,4 +159,9 @@ void modbus_rtu_sync(void)
     if (alm_lowDripRateShDn) alms |= MB_ALM_LOW_DRIP_SHDN;
     if (alm_lowOil)          alms |= MB_ALM_LOW_OIL;
     inp_reg[MB_INP_ALARMS] = alms;
+
+    inp_reg[MB_INP_LOW_DRIP_SHDN_EN] =
+        cfg_lowDripShDnEnable ? 1u : 0u;
+    inp_reg[MB_INP_LOW_DRIP_SHDN_DELAY] =
+        (uint16_t)cfg_lowDripShDnDelay;
 }

@@ -15511,7 +15511,7 @@
 #define DT_N_S_soc_S_uart_3ff6e000_P_uhci_slip_tx_EXISTS 1
 #define DT_N_S_soc_S_uart_3ff6e000_P_uhci_slip_rx 0
 #define DT_N_S_soc_S_uart_3ff6e000_P_uhci_slip_rx_EXISTS 1
-#define DT_N_S_soc_S_uart_3ff6e000_P_current_speed 9600
+#define DT_N_S_soc_S_uart_3ff6e000_P_current_speed 19200
 #define DT_N_S_soc_S_uart_3ff6e000_P_current_speed_EXISTS 1
 #define DT_N_S_soc_S_uart_3ff6e000_P_hw_flow_control 0
 #define DT_N_S_soc_S_uart_3ff6e000_P_hw_flow_control_EXISTS 1
@@ -15661,6 +15661,7 @@
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_uart_3ff6e000_S_modbus_rs485_EXISTS 1
+#define DT_N_ALIAS_modbus0               DT_N_S_soc_S_uart_3ff6e000_S_modbus_rs485
 #define DT_N_INST_0_zephyr_modbus_serial DT_N_S_soc_S_uart_3ff6e000_S_modbus_rs485
 #define DT_N_NODELABEL_modbus_rs485      DT_N_S_soc_S_uart_3ff6e000_S_modbus_rs485
 

@@ -6,16 +6,17 @@
 ../../TouchGFX/generated/gui_generated/include/gui_generated/settings_screen/SettingsViewBase.hpp:52:26:FrontendApplication& SettingsViewBase::application()	16	static
 ../../TouchGFX/gui/include/gui/settings_screen/SettingsView.hpp:11:13:SettingsView::~SettingsView()	16	static
 ../../TouchGFX/gui/include/gui/settings_screen/SettingsView.hpp:11:13:virtual SettingsView::~SettingsView()	16	static
-C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:17:1:SettingsView::SettingsView()	16	static
-C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:25:6:virtual void SettingsView::setupScreen()	32	static
-C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:44:6:virtual void SettingsView::tearDownScreen()	16	static
-C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:49:6:virtual void SettingsView::handleTickEvent()	16	static
-C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:65:6:virtual void SettingsView::DripRateMinusPress()	16	static
-C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:71:6:virtual void SettingsView::DripRatePlusPress()	16	static
-C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:77:6:void SettingsView::updateDripRateDisplay()	16	static
-C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:85:6:virtual void SettingsView::ShutdownDelayMinusPress()	16	static
-C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:91:6:virtual void SettingsView::ShutdownDelayPlusPress()	16	static
-C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:97:6:void SettingsView::updateShutdownDelayDisplay()	16	static
-C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:105:6:virtual void SettingsView::PumpShutdownPress()	16	static
-C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:120:6:void SettingsView::updateToggleDisplay()	16	static
-C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:128:6:virtual void SettingsView::SavePress()	88	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:12:1:SettingsView::SettingsView()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:20:6:virtual void SettingsView::setupScreen()	32	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:37:6:virtual void SettingsView::tearDownScreen()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:42:6:void SettingsView::loadFromPlc()	32	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:60:6:virtual void SettingsView::handleTickEvent()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:71:6:virtual void SettingsView::DripRateMinusPress()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:79:6:virtual void SettingsView::DripRatePlusPress()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:87:6:void SettingsView::updateDripRateDisplay()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:93:6:virtual void SettingsView::ShutdownDelayMinusPress()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:101:6:virtual void SettingsView::ShutdownDelayPlusPress()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:109:6:void SettingsView::updateShutdownDelayDisplay()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:115:6:virtual void SettingsView::PumpShutdownPress()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:129:6:void SettingsView::updateToggleDisplay()	16	static
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:135:6:virtual void SettingsView::SavePress()	24	static

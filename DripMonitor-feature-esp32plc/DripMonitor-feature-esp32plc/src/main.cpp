@@ -5,8 +5,10 @@
 #include <zephyr/logging/log.h>
 #include <zephyr/drivers/uart.h>
 #include <zephyr/device.h>
+#include <cstdio>
 #include <cstring>
 #include <cstdlib>
+#include "modbus_rtu.h"
 
 #include "storage.hpp"
 
@@ -272,9 +274,13 @@ static bool check_for_provisioning_request() {
     
     while (k_uptime_get() - start_time < PROVISIONING_TIMEOUT_MS) {
         if (k_msgq_get(&uart_msgq, &c, K_MSEC(10)) == 0) {
-            uart_print("Key detected! Entering provisioning menu...\r\n");
-            clear_input_queue();
-            return true;
+            // Only treat Enter as an explicit provisioning request.
+            // This avoids accidental menu entry from serial noise.
+            if (c == '\r' || c == '\n') {
+                uart_print("Enter detected! Entering provisioning menu...\r\n");
+                clear_input_queue();
+                return true;
+            }
         }
     }
     
@@ -307,10 +313,31 @@ int main() {
     if (check_for_provisioning_request()) {
         provisioning_menu();
     }
-    
-    // Provisioning complete - allow other threads to start
+
+    uart_print("\r\nStarting normal operation...\r\n");
+
+    {
+        int mb = modbus_rtu_init();
+        if (mb != 0) {
+            uart_print("Modbus RTU init failed (err=");
+            char errbuf[12];
+            snprintf(errbuf, sizeof(errbuf), "%d", mb);
+            uart_print(errbuf);
+            uart_print(")\r\n");
+        } else {
+            uart_print("Modbus RTU server ready (slave 1, 19200 8E1)\r\n");
+        }
+    }
+
+    // Release worker threads only after Modbus is up
     provisioning_mode = false;
+    uart_print("Application threads started.\r\n");
     LOG_INF("Provisioning complete. Starting normal operation...");
+
+    // Start Modbus RTU server
+    if (modbus_rtu_init() < 0) {
+        LOG_ERR("Modbus RTU init failed — continuing without HMI link");
+    }
 
     while (1){
         LOG_INF("Main loop");
@@ -319,3 +346,4 @@ int main() {
 
     return 0;
 }
+

@@ -26,8 +26,13 @@
 
 /* USER CODE END Includes */
 
-/* Forward declaration — defined in modbus_master.cpp */
-#include "modbus_master.h"
+#ifdef __cplusplus
+extern "C" {
+#endif
+void mb_init(void);
+#ifdef __cplusplus
+}
+#endif
 
 /* Private define ------------------------------------------------------------*/
 
@@ -69,7 +74,7 @@ void MX_TouchGFX_Init(void)
 {
     touchgfx_components_init();
     touchgfx_init();
-    mb_master_init();
+    mb_init();
 }
 
 /**

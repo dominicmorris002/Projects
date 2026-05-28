@@ -475,9 +475,9 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Core/Src/usart.c</locationURI>
 		</link>
 		<link>
-			<name>Application/User/Core/modbus_master.c</name>
+			<name>Application/User/gui/modbus_master.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/Core/Src/modbus_master.c</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/modbus_master.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/Core/usb_otg.c</name>

@@ -3,7 +3,7 @@
 
 #include <gui_generated/main_screen/MainViewBase.hpp>
 #include <gui/main_screen/MainPresenter.hpp>
-#include "modbus_master.h"                // FIX: include before it's used in declaration
+#include "modbus_master.hpp"
 
 class MainView : public MainViewBase
 {

@@ -10,6 +10,7 @@
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/pwm.h>
 #include <zephyr/drivers/gpio.h>
+#include <zephyr/drivers/i2c.h>
 #include <zephyr/drivers/watchdog.h>
 #include <zephyr/sys/clock.h>
 
@@ -140,6 +141,8 @@ bool                cfg_schedDays[7]                = {0};      // days to run, 
 static int          wdt_channel_id;
 static const struct device *const wdt               = DEVICE_DT_GET(DT_ALIAS(watchdog0));
 static bool         sts_wdtEnabled;                             // status to ensure watchdog gets installed to permit system to run
+static bool         sts_pca9685OutputsOk;                       // false when PCA9685/I2C is absent — skip PWM to avoid long stalls
+static bool         sts_expanderInputsOk;                       // false when MCP23008/I2C is absent — skip expander reads
 // **Oil Pump**
 // type             // variable                     // value    // comment
 static uint32_t     val_pumpStepWidth               = 0;        // duration of the pulse to stepper driver
@@ -160,6 +163,9 @@ static const struct pwm_dt_spec out_pumpSpd_dt = PWM_DT_SPEC_GET(DT_ALIAS(out_pu
 // Helper for treating a PCA9685 PWM channel as an on/off output.
 // Sets duty cycle to 100 % (channel always-on) or 0 % (always-off).
 static inline int pwmDigitalSet(const struct pwm_dt_spec *spec, bool on) {
+    if (!sts_pca9685OutputsOk || spec == nullptr || !device_is_ready(spec->dev)) {
+        return -ENODEV;
+    }
     return pwm_set_pulse_dt(spec, on ? spec->period : 0);
 }
 
@@ -231,12 +237,24 @@ K_THREAD_DEFINE(dripperThread, cfg_dripperThreadStackSize, dripperMain, NULL, NU
  * 
  * @return processed input value
  **************************************************************/
+static inline bool gpioInputRaw(const gpio_dt_spec *spec, bool invert)
+{
+    if (spec == nullptr || spec->port == nullptr || !device_is_ready(spec->port)) {
+        return false;
+    }
+    int val = gpio_pin_get_dt(spec);
+    if (val < 0) {
+        return false;
+    }
+    return (val != 0) ^ invert;
+}
+
 #define INPUT_DEBOUNCE(inp, onDbncTime, offDbncTime, invert) \
     do { \
         static utyTimer inp##_onDbnc(onDbncTime); \
         static utyTimer inp##_offDbnc(offDbncTime); \
         static bool inp##_prev = false; \
-        bool inp##_raw = gpio_pin_get_dt(&inp##_dt) ^ invert; \
+        bool inp##_raw = gpioInputRaw(&inp##_dt, invert); \
         inp##_onDbnc.enable(inp##_raw); \
         inp##_offDbnc.enable(!inp##_raw); \
         if (inp##_onDbnc.done()) {inp = true;} \
@@ -268,7 +286,8 @@ static int wdtInit(){
 	}
 
 	struct wdt_timeout_cfg wdt_config = {
-		.window = {0U, 1000U},
+		/* Allow headroom for slow I2C when expander/PCA9685 is missing. */
+		.window = {0U, 5000U},
         .callback = wdtCallback,
 		.flags = WDT_FLAG_RESET_SOC,
 	};
@@ -352,6 +371,22 @@ static inline void gpioConfig(const gpio_dt_spec *spec, const gpio_flags_t type,
 }
 
 
+#if DT_NODE_HAS_STATUS_OKAY(DT_NODELABEL(mcp23008))
+static bool mcp23008BusOk(void)
+{
+    static const struct i2c_dt_spec chip = I2C_DT_SPEC_GET(DT_NODELABEL(mcp23008));
+    uint8_t iodir = 0;
+
+    if (!i2c_is_ready_dt(&chip)) {
+        return false;
+    }
+    /* IODIR register — proves the expander answers on the bus. */
+    return i2c_reg_read_byte_dt(&chip, 0x03, &iodir) == 0;
+}
+#else
+static bool mcp23008BusOk(void) { return false; }
+#endif
+
 /***************************************************************
  * @brief Configure inputs
  * 
@@ -381,9 +416,25 @@ static void inputsInit(){
         }
     }
 
-    // Other inputs
-    gpioConfig(&inp_mtrRun_dt, GPIO_INPUT, "Motor Running");
-    gpioConfig(&inp_lowOil_dt, GPIO_INPUT, "Low Oil");
+    // Other inputs on MCP23008 — driver may report "ready" even when I2C NACKs
+    sts_expanderInputsOk = mcp23008BusOk();
+    if (sts_expanderInputsOk) {
+        ret = gpio_pin_configure_dt(&inp_mtrRun_dt, GPIO_INPUT);
+        if (ret < 0) {
+            sts_expanderInputsOk = false;
+            LOG_WRN("Motor Running GPIO configure failed (%d)", ret);
+        }
+        ret = gpio_pin_configure_dt(&inp_lowOil_dt, GPIO_INPUT);
+        if (ret < 0) {
+            sts_expanderInputsOk = false;
+            LOG_WRN("Low Oil GPIO configure failed (%d)", ret);
+        }
+        if (!sts_expanderInputsOk) {
+            LOG_WRN("MCP23008 inputs disabled");
+        }
+    } else {
+        LOG_WRN("MCP23008 not on I2C bus — motor-run/low-oil inputs disabled");
+    }
     //gpioConfig(&inp_aux1_dt, GPIO_INPUT, "Aux 1");
     //gpioConfig(&inp_aux2_dt, GPIO_INPUT, "Aux 2");
     //gpioConfig(&inp_aux3_dt, GPIO_INPUT, "Aux 3");
@@ -398,24 +449,38 @@ static void inputsInit(){
  * during its own init and zeros every output.  We just sanity-check
  * that the controllers are ready and force the initial OFF state.
  **************************************************************/
+#if DT_NODE_HAS_STATUS_OKAY(DT_NODELABEL(pca9685))
+static bool pca9685BusOk(void)
+{
+    static const struct i2c_dt_spec chip = I2C_DT_SPEC_GET(DT_NODELABEL(pca9685));
+    uint8_t mode1 = 0;
+
+    if (!i2c_is_ready_dt(&chip)) {
+        return false;
+    }
+    return i2c_reg_read_byte_dt(&chip, 0x00, &mode1) == 0;
+}
+#else
+static bool pca9685BusOk(void) { return false; }
+#endif
+
 static void outputsInit(){
+    sts_pca9685OutputsOk = pca9685BusOk();
+    if (!sts_pca9685OutputsOk) {
+        LOG_WRN("PCA9685 not on I2C bus — motor/LED outputs disabled");
+        return;
+    }
+
     const struct pwm_dt_spec *outs[] = {
-        &out_mtrEnable_dt, &out_ledGrn_dt, &out_ledRed_dt, &out_pumpSpd_dt,
-    };
-    static const char *const names[] = {
-        "Motor Enable", "Green LED", "Red LED", "Pump Speed",
+        &out_mtrEnable_dt, &out_ledGrn_dt, &out_ledRed_dt,
     };
 
     for (size_t i = 0; i < ARRAY_SIZE(outs); i++) {
-        if (!device_is_ready(outs[i]->dev)) {
-            alm_sysFault = true;
-            LOG_ERR("%s PWM controller not ready", names[i]);
-            continue;
-        }
-        int ret = pwmDigitalSet(outs[i], false);
+        int ret = pwm_set_pulse_dt(outs[i], 0);
         if (ret < 0) {
-            alm_sysFault = true;
-            LOG_ERR("%s initial OFF failed: %d", names[i], ret);
+            sts_pca9685OutputsOk = false;
+            LOG_WRN("PCA9685 output init failed (%d) — outputs disabled", ret);
+            return;
         }
     }
 }
@@ -747,22 +812,29 @@ static void dripperMain(){
         k_sleep(K_MSEC(500));
     }
 
-    ret = wdtInit();
-    if (ret == 0) {
-        sts_wdtEnabled = true;
-    }
-    // init I/O
+    // I/O and storage before the 1 s hardware watchdog — outputsInit() can
+    // stall on a missing PCA9685 if we arm WDT first.
     inputsInit();
     outputsInit();
-
-    // init other components
     pidInit();
     varInit();
 
+    ret = wdtInit();
+    if (ret == 0) {
+        sts_wdtEnabled = true;
+        wdt_feed(wdt, wdt_channel_id);
+    }
+
     while(1){
+        if (sts_wdtEnabled) {
+            wdt_feed(wdt, wdt_channel_id);
+        }
+
         // update inputs
-        INPUT_DEBOUNCE(inp_mtrRun, 50, 50, false);
-        INPUT_DEBOUNCE(inp_lowOil, 50, 50, true);
+        if (sts_expanderInputsOk) {
+            INPUT_DEBOUNCE(inp_mtrRun, 50, 50, false);
+            INPUT_DEBOUNCE(inp_lowOil, 50, 50, true);
+        }
         //INPUT_DEBOUNCE(inp_aux1, 50, 50, true);
         //INPUT_DEBOUNCE(inp_aux2, 50, 50, true);
         //INPUT_DEBOUNCE(inp_aux3, 50, 50, true);
@@ -858,9 +930,6 @@ static void dripperMain(){
         pwmDigitalSet(&out_ledRed_dt,    out_ledRed);
 
         CHECK_STACK(cfg_dripperThreadStackSize);
-
-        // thread is monitored by watchdog
-        wdt_feed(wdt, wdt_channel_id);
 
         // Sync live PLC state into Modbus input registers for HMI  // ← ADDED
         modbus_rtu_sync();                                           // ← ADDED

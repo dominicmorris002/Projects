@@ -25,12 +25,13 @@
 	/* node '/aliases' defined in zephyr\dts\common\skeleton.dtsi:15 */
 	aliases {
 		watchdog0 = &wdt0;                /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:53 */
-		uart-0 = &uart0;                  /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:54 */
-		uart-485 = &uart2;                /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:55 */
-		i2c-0 = &i2c0;                    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:56 */
-		rtc = &ds3231;                    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:57 */
-		eth0 = &eth_w5500;                /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:58 */
-		sdhc0 = &sd_slot;                 /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:59 */
+		modbus0 = &modbus_rs485;          /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:54 */
+		uart-0 = &uart0;                  /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:55 */
+		uart-485 = &uart2;                /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:56 */
+		i2c-0 = &i2c0;                    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:57 */
+		rtc = &ds3231;                    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:58 */
+		eth0 = &eth_w5500;                /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:59 */
+		sdhc0 = &sd_slot;                 /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:60 */
 		inp-drip = &inp_drip;             /* in DripMonitor-feature-esp32plc\boards\esp32_plc_21_esp32_procpu.overlay:57 */
 		inp-mtr-run = &inp_mtr_run;       /* in DripMonitor-feature-esp32plc\boards\esp32_plc_21_esp32_procpu.overlay:58 */
 		inp-low-oil = &inp_low_oil;       /* in DripMonitor-feature-esp32plc\boards\esp32_plc_21_esp32_procpu.overlay:59 */
@@ -276,10 +277,10 @@
 			interrupts = < 0x22 0x0 0x0 >;       /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:244 */
 			interrupt-parent = < &intc >;        /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:245 */
 			clocks = < &clock 0x65 >;            /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:246 */
-			status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:64 */
-			current-speed = < 0x1c200 >;         /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:65 */
-			pinctrl-0 = < &uart0_default >;      /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:66 */
-			pinctrl-names = "default";           /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:67 */
+			status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:65 */
+			current-speed = < 0x1c200 >;         /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:66 */
+			pinctrl-0 = < &uart0_default >;      /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:67 */
+			pinctrl-names = "default";           /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:68 */
 		};
 
 		/* node '/soc/uart@3ff50000' defined in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:250 */
@@ -299,16 +300,16 @@
 			interrupts = < 0x24 0x0 0x0 >;       /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:262 */
 			interrupt-parent = < &intc >;        /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:263 */
 			clocks = < &clock 0x1 >;             /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:264 */
-			status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:81 */
-			current-speed = < 0x2580 >;          /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:82 */
-			pinctrl-0 = < &uart2_default >;      /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:83 */
-			pinctrl-names = "default";           /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:84 */
+			status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:82 */
+			current-speed = < 0x4b00 >;          /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:83 */
+			pinctrl-0 = < &uart2_default >;      /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:84 */
+			pinctrl-names = "default";           /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:85 */
 
-			/* node '/soc/uart@3ff6e000/modbus_rs485' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:86 */
+			/* node '/soc/uart@3ff6e000/modbus_rs485' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:87 */
 			modbus_rs485: modbus_rs485 {
-				compatible = "zephyr,modbus-serial"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:87 */
-				status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:88 */
-				de-gpios = < &gpio0 0x4 0x0 >;       /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:89 */
+				compatible = "zephyr,modbus-serial"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:88 */
+				status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:89 */
+				de-gpios = < &gpio0 0x4 0x0 >;       /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:90 */
 			};
 		};
 
@@ -377,8 +378,8 @@
 				                       < 0x14 0x1 >,
 				                       < 0x18 0x1 >,
 				                       < 0x1c 0x4 >; /* in zephyr\dts\xtensa\espressif\esp32\esp32_wroom_32ue_n16.dtsi:11 */
-				status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:94 */
-				phandle = < 0x6 >;                   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:89 */
+				status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:95 */
+				phandle = < 0x6 >;                   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:90 */
 			};
 
 			/* node '/soc/gpio/gpio@3ff44800' defined in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:331 */
@@ -391,7 +392,7 @@
 				interrupt-parent = < &intc >;        /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:337 */
 				ngpios = < 0x8 >;                    /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:338 */
 				gpio-reserved-ranges = < 0x5 0x2 >;  /* in zephyr\dts\xtensa\espressif\esp32\esp32_wroom_32ue_n16.dtsi:16 */
-				status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:98 */
+				status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:99 */
 				phandle = < 0x7 >;                   /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:309 */
 			};
 		};
@@ -414,64 +415,64 @@
 			interrupts = < 0x31 0x0 0x0 >;      /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:355 */
 			interrupt-parent = < &intc >;       /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:356 */
 			clocks = < &clock 0x66 >;           /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:357 */
-			status = "okay";                    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:102 */
-			clock-frequency = < 0x186a0 >;      /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:103 */
-			sda-gpios = < &gpio0 0x15 0x6 >;    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:104 */
-			scl-gpios = < &gpio0 0x16 0x6 >;    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:105 */
-			pinctrl-0 = < &i2c0_default >;      /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:106 */
-			pinctrl-names = "default";          /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:107 */
+			status = "okay";                    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:103 */
+			clock-frequency = < 0x186a0 >;      /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:104 */
+			sda-gpios = < &gpio0 0x15 0x6 >;    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:105 */
+			scl-gpios = < &gpio0 0x16 0x6 >;    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:106 */
+			pinctrl-0 = < &i2c0_default >;      /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:107 */
+			pinctrl-names = "default";          /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:108 */
 
-			/* node '/soc/i2c@3ff53000/gpio@21' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:109 */
+			/* node '/soc/i2c@3ff53000/gpio@21' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:110 */
 			mcp23008: gpio@21 {
-				compatible = "microchip,mcp23008"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:110 */
-				reg = < 0x21 >;                    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:111 */
-				gpio-controller;                   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:112 */
-				#gpio-cells = < 0x2 >;             /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:113 */
-				ngpios = < 0x8 >;                  /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:114 */
-				status = "okay";                   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:115 */
+				compatible = "microchip,mcp23008"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:111 */
+				reg = < 0x21 >;                    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:112 */
+				gpio-controller;                   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:113 */
+				#gpio-cells = < 0x2 >;             /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:114 */
+				ngpios = < 0x8 >;                  /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:115 */
+				status = "okay";                   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:116 */
 				phandle = < 0xc >;                 /* in DripMonitor-feature-esp32plc\boards\esp32_plc_21_esp32_procpu.overlay:75 */
 			};
 
-			/* node '/soc/i2c@3ff53000/adc@48' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:118 */
+			/* node '/soc/i2c@3ff53000/adc@48' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:119 */
 			ads1015_48: adc@48 {
-				compatible = "ti,ads1015";   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:119 */
-				reg = < 0x48 >;              /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:120 */
-				#io-channel-cells = < 0x1 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:121 */
-				#address-cells = < 0x1 >;    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:122 */
-				#size-cells = < 0x0 >;       /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:123 */
-				status = "okay";             /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:124 */
+				compatible = "ti,ads1015";   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:120 */
+				reg = < 0x48 >;              /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:121 */
+				#io-channel-cells = < 0x1 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:122 */
+				#address-cells = < 0x1 >;    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:123 */
+				#size-cells = < 0x0 >;       /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:124 */
+				status = "okay";             /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:125 */
 			};
 
-			/* node '/soc/i2c@3ff53000/adc@49' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:127 */
+			/* node '/soc/i2c@3ff53000/adc@49' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:128 */
 			ads1015_49: adc@49 {
-				compatible = "ti,ads1015";   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:128 */
-				reg = < 0x49 >;              /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:129 */
-				#io-channel-cells = < 0x1 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:130 */
-				#address-cells = < 0x1 >;    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:131 */
-				#size-cells = < 0x0 >;       /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:132 */
-				status = "okay";             /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:133 */
+				compatible = "ti,ads1015";   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:129 */
+				reg = < 0x49 >;              /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:130 */
+				#io-channel-cells = < 0x1 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:131 */
+				#address-cells = < 0x1 >;    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:132 */
+				#size-cells = < 0x0 >;       /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:133 */
+				status = "okay";             /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:134 */
 			};
 
-			/* node '/soc/i2c@3ff53000/pwm@40' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:136 */
+			/* node '/soc/i2c@3ff53000/pwm@40' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:137 */
 			pca9685: pwm@40 {
-				compatible = "nxp,pca9685-pwm"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:137 */
-				reg = < 0x40 >;                 /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:138 */
-				#pwm-cells = < 0x3 >;           /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:139 */
-				status = "okay";                /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:140 */
+				compatible = "nxp,pca9685-pwm"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:138 */
+				reg = < 0x40 >;                 /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:139 */
+				#pwm-cells = < 0x3 >;           /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:140 */
+				status = "okay";                /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:141 */
 				phandle = < 0xd >;              /* in DripMonitor-feature-esp32plc\boards\esp32_plc_21_esp32_procpu.overlay:96 */
 			};
 
-			/* node '/soc/i2c@3ff53000/ds3231@68' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:143 */
+			/* node '/soc/i2c@3ff53000/ds3231@68' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:144 */
 			ds3231_mfd: ds3231@68 {
-				compatible = "maxim,ds3231-mfd"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:144 */
-				reg = < 0x68 >;                  /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:145 */
-				status = "okay";                 /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:146 */
+				compatible = "maxim,ds3231-mfd"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:145 */
+				reg = < 0x68 >;                  /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:146 */
+				status = "okay";                 /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:147 */
 
-				/* node '/soc/i2c@3ff53000/ds3231@68/ds3231-rtc' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:148 */
+				/* node '/soc/i2c@3ff53000/ds3231@68/ds3231-rtc' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:149 */
 				ds3231: ds3231-rtc {
-					compatible = "maxim,ds3231-rtc"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:149 */
-					status = "okay";                 /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:150 */
-					isw-gpios = < &gpio1 0x2 0x1 >;  /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:159 */
+					compatible = "maxim,ds3231-rtc"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:150 */
+					status = "okay";                 /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:151 */
+					isw-gpios = < &gpio1 0x2 0x1 >;  /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:160 */
 				};
 			};
 
@@ -532,7 +533,7 @@
 			compatible = "espressif,esp32-trng"; /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:401 */
 			reg = < 0x3ff75144 0x4 >;            /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:402 */
 			clocks = < &clock 0x9 >;             /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:403 */
-			status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:200 */
+			status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:201 */
 		};
 
 		/* node '/soc/watchdog@3ff5f048' defined in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:407 */
@@ -542,7 +543,7 @@
 			interrupts = < 0x10 0x0 0x0 >;           /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:410 */
 			interrupt-parent = < &intc >;            /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:411 */
 			clocks = < &clock 0x3 >;                 /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:412 */
-			status = "okay";                         /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:204 */
+			status = "okay";                         /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:205 */
 		};
 
 		/* node '/soc/watchdog@3ff60048' defined in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:416 */
@@ -576,35 +577,35 @@
 			clocks = < &clock 0x8 >;            /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:441 */
 			dma-clk = < 0x6e >;                 /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:442 */
 			dma-host = < 0x1 >;                 /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:443 */
-			#address-cells = < 0x1 >;           /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:165 */
-			#size-cells = < 0x0 >;              /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:166 */
-			status = "okay";                    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:167 */
-			pinctrl-0 = < &spim3_default >;     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:168 */
-			pinctrl-names = "default";          /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:169 */
+			#address-cells = < 0x1 >;           /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:166 */
+			#size-cells = < 0x0 >;              /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:167 */
+			status = "okay";                    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:168 */
+			pinctrl-0 = < &spim3_default >;     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:169 */
+			pinctrl-names = "default";          /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:170 */
 			cs-gpios = < &gpio0 0xf 0x1 >,
-			           < &gpio0 0xd 0x1 >;      /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:171 */
+			           < &gpio0 0xd 0x1 >;      /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:172 */
 
-			/* node '/soc/spi@3ff65000/eth@0' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:174 */
+			/* node '/soc/spi@3ff65000/eth@0' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:175 */
 			eth_w5500: eth@0 {
-				compatible = "wiznet,w5500";       /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:175 */
-				reg = < 0x0 >;                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:176 */
-				spi-max-frequency = < 0x1312d00 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:177 */
-				int-gpios = < &gpio1 0x2 0x1 >;    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:181 */
-				status = "okay";                   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:182 */
+				compatible = "wiznet,w5500";       /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:176 */
+				reg = < 0x0 >;                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:177 */
+				spi-max-frequency = < 0x1312d00 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:178 */
+				int-gpios = < &gpio1 0x2 0x1 >;    /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:182 */
+				status = "okay";                   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:183 */
 			};
 
-			/* node '/soc/spi@3ff65000/sdhc@1' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:185 */
+			/* node '/soc/spi@3ff65000/sdhc@1' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:186 */
 			sd_slot: sdhc@1 {
-				compatible = "zephyr,sdhc-spi-slot"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:186 */
-				reg = < 0x1 >;                       /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:187 */
-				spi-max-frequency = < 0x1312d00 >;   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:188 */
-				status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:189 */
+				compatible = "zephyr,sdhc-spi-slot"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:187 */
+				reg = < 0x1 >;                       /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:188 */
+				spi-max-frequency = < 0x1312d00 >;   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:189 */
+				status = "okay";                     /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:190 */
 
-				/* node '/soc/spi@3ff65000/sdhc@1/mmc' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:191 */
+				/* node '/soc/spi@3ff65000/sdhc@1/mmc' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:192 */
 				mmc {
-					compatible = "zephyr,sdmmc-disk"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:192 */
-					disk-name = "SD";                 /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:193 */
-					status = "okay";                  /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:194 */
+					compatible = "zephyr,sdmmc-disk"; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:193 */
+					disk-name = "SD";                 /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:194 */
+					status = "okay";                  /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:195 */
 				};
 			};
 		};
@@ -818,14 +819,14 @@
 	/* node '/wifi' defined in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:68 */
 	wifi: wifi {
 		compatible = "espressif,esp32-wifi"; /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:69 */
-		status = "disabled";                 /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:213 */
+		status = "disabled";                 /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:214 */
 	};
 
 	/* node '/esp32_bt_hci' defined in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:73 */
 	esp32_bt_hci: esp32_bt_hci {
 		compatible = "espressif,esp32-bt-hci"; /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:74 */
 		bt-hci-vs-ext;                         /* in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:75 */
-		status = "disabled";                   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:217 */
+		status = "disabled";                   /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:218 */
 	};
 
 	/* node '/eth' defined in zephyr\dts\xtensa\espressif\esp32\esp32_common.dtsi:79 */
@@ -853,7 +854,7 @@
 
 		/* node '/pin-controller/uart0_default' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21-pinctrl.dtsi:14 */
 		uart0_default: uart0_default {
-			phandle = < 0x4 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:66 */
+			phandle = < 0x4 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:67 */
 
 			/* node '/pin-controller/uart0_default/group1' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21-pinctrl.dtsi:15 */
 			group1 {
@@ -870,7 +871,7 @@
 
 		/* node '/pin-controller/uart2_default' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21-pinctrl.dtsi:29 */
 		uart2_default: uart2_default {
-			phandle = < 0x5 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:83 */
+			phandle = < 0x5 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:84 */
 
 			/* node '/pin-controller/uart2_default/group1' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21-pinctrl.dtsi:30 */
 			group1 {
@@ -886,7 +887,7 @@
 
 		/* node '/pin-controller/i2c0_default' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21-pinctrl.dtsi:43 */
 		i2c0_default: i2c0_default {
-			phandle = < 0x8 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:106 */
+			phandle = < 0x8 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:107 */
 
 			/* node '/pin-controller/i2c0_default/group1' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21-pinctrl.dtsi:44 */
 			group1 {
@@ -900,7 +901,7 @@
 
 		/* node '/pin-controller/spim3_default' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21-pinctrl.dtsi:54 */
 		spim3_default: spim3_default {
-			phandle = < 0x9 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:168 */
+			phandle = < 0x9 >; /* in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21_esp32_procpu.dts:169 */
 
 			/* node '/pin-controller/spim3_default/group1' defined in DripMonitor-feature-esp32plc\boards\industrialshields\esp32_plc_21\esp32_plc_21-pinctrl.dtsi:55 */
 			group1 {

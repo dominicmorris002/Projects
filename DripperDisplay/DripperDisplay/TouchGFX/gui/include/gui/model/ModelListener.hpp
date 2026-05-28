@@ -1,21 +1,23 @@
-#ifndef MODELLISTENER_HPP
-#define MODELLISTENER_HPP
+#ifndef MODEL_LISTENER_HPP
+#define MODEL_LISTENER_HPP
 
-#include <gui/model/Model.hpp>
+#include "modbus_master.hpp"
+
+class Model;
 
 class ModelListener
 {
 public:
     ModelListener() : model(0) {}
-    
+
     virtual ~ModelListener() {}
 
-    void bind(Model* m)
-    {
-        model = m;
-    }
+    void bind(Model *m) { model = m; }
+
+    virtual void onPollResult(const MB_PollResult &result) {}
+
 protected:
-    Model* model;
+    Model *model;
 };
 
-#endif // MODELLISTENER_HPP
+#endif // MODEL_LISTENER_HPP

@@ -1,23 +1,18 @@
 #include <gui/settings_screen/SettingsView.hpp>
+#include <gui/common/FrontendApplication.hpp> /* protection screen navigation */
 #include <images/BitmapDatabase.hpp>
 #include <touchgfx/Unicode.hpp>
-#include <cstdio>
-#include <cstring>
 
 #ifdef TARGET_STM32
-#include "stm32u5xx_hal.h"
-extern UART_HandleTypeDef huart1;
-#define UART_SEND(buf, len) HAL_UART_Transmit(&huart1, (uint8_t*)(buf), (uint16_t)(len), 200)
-#else
-#define UART_SEND(buf, len) (void)0
+#include "modbus_master.hpp"
 #endif
 
-static const int SAVED_DISPLAY_TICKS = 94;
+static const int SAVED_DISPLAY_TICKS = 60;
 
 SettingsView::SettingsView()
-    : dripRateSetpoint(0),
-      shutdownDelay(0),
-      pumpShutdownEnabled(false),
+    : dripRateSetpoint(20),
+      shutdownDelay(5),
+      pumpShutdownEnabled(true),
       savedTicksRemaining(0)
 {
 }
@@ -31,9 +26,7 @@ void SettingsView::setupScreen()
         touchgfx::Bitmap(BITMAP_ONBUTTON_ID)
     );
 
-    dripRateSetpoint = 0;
-    shutdownDelay = 0;
-    pumpShutdownEnabled = false;
+    loadFromPlc();
     savedTicksRemaining = 0;
 
     updateDripRateDisplay();
@@ -46,31 +39,48 @@ void SettingsView::tearDownScreen()
     SettingsViewBase::tearDownScreen();
 }
 
+void SettingsView::loadFromPlc()
+{
+#ifdef TARGET_STM32
+    MB_PollResult r = mb_poll();
+    if (!r.ok) {
+        return;
+    }
+
+    if (r.drip_rate_sp >= 50 && r.drip_rate_sp <= 500) {
+        dripRateSetpoint = r.drip_rate_sp / 10;
+    }
+    if (r.low_drip_shdn_delay <= 999) {
+        shutdownDelay = r.low_drip_shdn_delay;
+    }
+    pumpShutdownEnabled = (r.low_drip_shdn_en != 0);
+#endif
+}
+
 void SettingsView::handleTickEvent()
 {
-    if (savedTicksRemaining > 0)
-    {
+    if (savedTicksRemaining > 0) {
         savedTicksRemaining--;
 
-        if (savedTicksRemaining == 0)
-        {
-            updateDripRateDisplay();
+        if (savedTicksRemaining == 0) {
             application().gotoMainScreenWipeTransitionEast();
         }
     }
 }
 
-// ───────── DRIP RATE ─────────
-
 void SettingsView::DripRateMinusPress()
 {
-    if (dripRateSetpoint > 0) dripRateSetpoint--;
+    if (dripRateSetpoint > 5) {
+        dripRateSetpoint--;
+    }
     updateDripRateDisplay();
 }
 
 void SettingsView::DripRatePlusPress()
 {
-    if (dripRateSetpoint < 999) dripRateSetpoint++;
+    if (dripRateSetpoint < 50) {
+        dripRateSetpoint++;
+    }
     updateDripRateDisplay();
 }
 
@@ -80,17 +90,19 @@ void SettingsView::updateDripRateDisplay()
     Number_3.invalidate();
 }
 
-// ───────── SHUTDOWN DELAY ─────────
-
 void SettingsView::ShutdownDelayMinusPress()
 {
-    if (shutdownDelay > 0) shutdownDelay--;
+    if (shutdownDelay > 0) {
+        shutdownDelay--;
+    }
     updateShutdownDelayDisplay();
 }
 
 void SettingsView::ShutdownDelayPlusPress()
 {
-    if (shutdownDelay < 999) shutdownDelay++;
+    if (shutdownDelay < 999) {
+        shutdownDelay++;
+    }
     updateShutdownDelayDisplay();
 }
 
@@ -100,21 +112,18 @@ void SettingsView::updateShutdownDelayDisplay()
     Number_2_1.invalidate();
 }
 
-// ───────── PUMP TOGGLE ─────────
-
 void SettingsView::PumpShutdownPress()
 {
-    pumpShutdownEnabled = !pumpShutdownEnabled;
-    updateToggleDisplay();
+    if (pumpShutdownEnabled) {
+        /* Turning protection OFF requires confirmation — keep toggle ON. */
+        updateToggleDisplay();
+        static_cast<FrontendApplication &>(application())
+            .gotoProtection_Disable_Confirmation_ScreenNoTransition();
+        return;
+    }
 
-    if (pumpShutdownEnabled)
-    {
-        UART_SEND("PUMP_SHUTDOWN:1\n", strlen("PUMP_SHUTDOWN:1\n"));
-    }
-    else
-    {
-        UART_SEND("PUMP_SHUTDOWN:0\n", strlen("PUMP_SHUTDOWN:0\n"));
-    }
+    pumpShutdownEnabled = true;
+    updateToggleDisplay();
 }
 
 void SettingsView::updateToggleDisplay()
@@ -123,22 +132,27 @@ void SettingsView::updateToggleDisplay()
     toggleButton1.invalidate();
 }
 
-// ───────── SAVE ─────────
-
 void SettingsView::SavePress()
 {
-    char msg[64];
+#ifdef TARGET_STM32
+    bool ok = true;
 
-    snprintf(msg, sizeof(msg),
-             "SETPOINT:%d,DELAY:%d,SHUTDOWN:%d\n",
-             dripRateSetpoint,
-             shutdownDelay,
-             pumpShutdownEnabled ? 1 : 0);
+    if (!mb_set_drip_rate((float)dripRateSetpoint)) {
+        ok = false;
+    }
+    if (!mb_write_holding_u16(MB_HOLD_LOW_DRIP_SHDN_EN,
+                              pumpShutdownEnabled ? 1u : 0u)) {
+        ok = false;
+    }
+    if (!mb_write_holding_u16(MB_HOLD_LOW_DRIP_SHDN_DELAY,
+                              (uint16_t)shutdownDelay)) {
+        ok = false;
+    }
 
-    UART_SEND(msg, strlen(msg));
-
-    Unicode::snprintf(Number_3Buffer, NUMBER_3_SIZE, "OK");
-    Number_3.invalidate();
+    if (!ok) {
+        return;
+    }
+#endif
 
     savedTicksRemaining = SAVED_DISPLAY_TICKS;
 }

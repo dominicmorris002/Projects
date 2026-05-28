@@ -47,6 +47,7 @@ Application/User/gui/StartupPresenter.o: \
  ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
  ../../TouchGFX/gui/include/gui/startup_screen/StartupPresenter.hpp \
  ../../TouchGFX/gui/include/gui/model/ModelListener.hpp \
+ ../../TouchGFX/gui/include/modbus_master.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp
 ../../TouchGFX/gui/include/gui/startup_screen/StartupView.hpp:
@@ -96,5 +97,6 @@ Application/User/gui/StartupPresenter.o: \
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 ../../TouchGFX/gui/include/gui/startup_screen/StartupPresenter.hpp:
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:
+../../TouchGFX/gui/include/modbus_master.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:

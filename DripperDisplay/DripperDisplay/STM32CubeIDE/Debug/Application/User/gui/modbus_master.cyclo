@@ -1,0 +1,10 @@
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/modbus_master.cpp:18:17:uint16_t crc16(const uint8_t*, uint16_t)	4
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/modbus_master.cpp:34:13:void mb_flush_rx()	2
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/modbus_master.cpp:41:13:bool mb_transaction(const uint8_t*, uint8_t, uint8_t*, uint8_t)	12
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/modbus_master.cpp:89:13:void build_frame(uint8_t*, uint8_t, uint16_t, uint16_t)	1
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/modbus_master.cpp:102:6:void mb_init()	1
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/modbus_master.cpp:107:15:MB_PollResult mb_poll()	3
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/modbus_master.cpp:138:6:bool mb_write_holding_u16(uint16_t, uint16_t)	1
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/modbus_master.cpp:145:6:bool mb_set_run(bool)	2
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/modbus_master.cpp:152:6:void mb_send_prime()	1
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/modbus_master.cpp:159:6:bool mb_set_drip_rate(float)	3

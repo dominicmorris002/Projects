@@ -11,7 +11,8 @@ public:
     virtual ~Protection_Disable_Confirmation_ScreenView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
-protected:
+
+    virtual void ContinuePress();
 };
 
 #endif // PROTECTION_DISABLE_CONFIRMATION_SCREENVIEW_HPP
