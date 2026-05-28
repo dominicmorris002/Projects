@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_cache_utils.c:28:6:esp_cache_suspend_ext_mem_cache	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_cache_utils.c:40:6:esp_cache_resume_ext_mem_cache	32	static

@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_uart/uart_hal_iram.c:10:6:uart_hal_txfifo_rst	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_uart/uart_hal_iram.c:15:6:uart_hal_rxfifo_rst	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_uart/uart_hal_iram.c:20:6:uart_hal_tx_break	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_uart/uart_hal_iram.c:25:6:uart_hal_write_txfifo	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_uart/uart_hal_iram.c:35:6:uart_hal_read_rxfifo	48	static

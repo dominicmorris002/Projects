@@ -1,0 +1,47 @@
+config ENABLE_DRIPPER
+    bool "Enable Dripper Control"
+    default y
+    help
+      Enable the dripper control thread and functionality
+
+config ENABLE_DISPLAY
+    bool "Enable Project Display"
+    default y
+    help
+      Enable the LCD display thread and user interface
+
+config ENABLE_CLOUD
+    bool "Enable Project Cloud Communications"
+    default y
+    help
+      Enable MQTT cloud connectivity and data synchronization
+
+config PID_TUNING_LOG
+    bool "Enable PID Tuning Data Logging"
+    default n
+    help
+      Enable detailed PID tuning data logging for analysis.
+      Logs setpoint, process variable, control output, and PID parameters.
+
+# Per-module logging configuration
+menu "Module Log Levels"
+
+module = APP_MAIN
+module-str = app_main
+source "subsys/logging/Kconfig.template.log_config"
+
+module = APP_DRIPPER
+module-str = app_dripper
+source "subsys/logging/Kconfig.template.log_config"
+
+module = APP_DISPLAY
+module-str = app_display
+source "subsys/logging/Kconfig.template.log_config"
+
+module = APP_CLOUD
+module-str = app_cloud
+source "subsys/logging/Kconfig.template.log_config"
+
+endmenu
+
+source "Kconfig.zephyr"

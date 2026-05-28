@@ -1,0 +1,120 @@
+/*
+ * Application-level overlay for the Industrial Shields ESP32 PLC 21.
+ *
+ * The board definition (boards/industrialshields/esp32_plc_21/) describes
+ * the *PLC hardware itself*: the ESP32, the on-board MCP23008/ADS1015/
+ * PCA9685/DS3231 peripherals, the W5500, the SD slot, RS-485, etc.
+ *
+ * This file describes the *DripMonitor-specific things bolted onto the
+ * outside of that hardware*: which PLC terminals carry which logical I/O,
+ * and the LK204 LCD plugged onto the I2C bus.
+ *
+ * Logical to physical mapping:
+ *
+ *   Inputs
+ *   ──────
+ *     Drip sensor      ──▶ I0_5 (GPIO27, native ESP32, edge-interrupt capable)
+ *     Motor running    ──▶ I0_1 (MCP23008 P4)
+ *     Low oil          ──▶ I0_0 (MCP23008 P6)
+ *
+ *   Outputs (all on PCA9685 channels — see API note below)
+ *   ───────
+ *     LED green        ──▶ Q0_0 (PCA9685 ch 11)   on/off
+ *     LED red          ──▶ Q0_1 (PCA9685 ch 10)   on/off
+ *     Motor enable     ──▶ Q0_2 (PCA9685 ch  9)   on/off
+ *     Pump speed       ──▶ Q0_5 (PCA9685 ch 13)   variable PWM (low-pass
+ *                                                  filtered → analog drive
+ *                                                  for the future stepper
+ *                                                  controller)
+ *
+ * NOTE on PWM-as-output modeling:
+ *   The PCA9685 is a 16-channel I2C output expander.  Three of the four
+ *   outputs above (LED green/red, motor enable) are conceptually plain
+ *   binary outputs and would naturally be `gpio_dt_spec`s -- but Zephyr
+ *   only ships a *PWM* driver for the PCA9685 (`nxp,pca9685-pwm`); there
+ *   is no upstream `gpio-pca9685` shim driver.  The chip itself supports
+ *   "full ON" / "full OFF" register modes that bypass the PWM counter,
+ *   and the Zephyr driver maps duty=full / duty=0 onto exactly those
+ *   modes.  So even though the application API is PWM-shaped, the chip
+ *   really is just being told "channel always on" or "channel always off"
+ *   for the binary outputs.  See pwmDigitalSet() in dripper.cpp for the
+ *   wrapper that hides this.
+ *
+ *   Only the pump-speed line is genuinely a PWM signal, and even that
+ *   one is on borrowed time (planned to migrate to the chip's analog
+ *   output behavior + a dedicated stepper controller).
+ *
+ * NOTE on the filename: Zephyr 4.2's auto-discovery in <APP>/boards/
+ * matches against the *full* normalized board target name
+ *   esp32_plc_21_esp32_procpu.overlay
+ * and (despite the documentation) does NOT fall back to the bare board
+ * name `esp32_plc_21.overlay`. If you ever change the board target,
+ * rename this file too or it will silently stop being included.
+ */
+
+/ {
+	aliases {
+		inp-drip       = &inp_drip;
+		inp-mtr-run    = &inp_mtr_run;
+		inp-low-oil    = &inp_low_oil;
+
+		out-led-grn     = &out_led_grn;
+		out-led-red     = &out_led_red;
+		out-mtr-enable  = &out_mtr_enable;
+		out-pump-spd    = &out_pump_spd;   /* the only one that's actually PWM */
+	};
+
+	inputs {
+		compatible = "gpio-keys";
+
+		inp_drip: inp_drip {
+			gpios = <&gpio0 27 GPIO_ACTIVE_HIGH>; /* I0_5 = GPIO27 */
+			label = "I0.5 (Drip)";
+		};
+		inp_mtr_run: inp_mtr_run {
+			gpios = <&mcp23008 4 GPIO_ACTIVE_HIGH>; /* I0_1 = MCP23008 P4 */
+			label = "I0.1 (Motor Run)";
+		};
+		inp_low_oil: inp_low_oil {
+			gpios = <&mcp23008 6 GPIO_ACTIVE_HIGH>; /* I0_0 = MCP23008 P6 */
+			label = "I0.0 (Low Oil)";
+		};
+	};
+
+	/* DripMonitor outputs.  Wrapped in a `pwm-leds` parent so each one
+	 * becomes a PWM_DT_SPEC_GET()-able node.  The `pwm-leds` parent is
+	 * just a vehicle for grouping pwms phandles; nothing here is actually
+	 * an LED indicator (see API note above for why these on/off outputs
+	 * wear PWM clothing).  The PCA9685 has a single chip-wide period;
+	 * pinning it at ~625 µs (1.6 kHz) on every child keeps the chip from
+	 * being retuned mid-run.
+	 */
+	pwmdevs {
+		compatible = "pwm-leds";
+
+		out_led_grn: out_led_grn {
+			pwms = <&pca9685 11 PWM_USEC(625) PWM_POLARITY_NORMAL>;
+			label = "LED Green (Q0.0)";
+		};
+		out_led_red: out_led_red {
+			pwms = <&pca9685 10 PWM_USEC(625) PWM_POLARITY_NORMAL>;
+			label = "LED Red (Q0.1)";
+		};
+		out_mtr_enable: out_mtr_enable {
+			pwms = <&pca9685 9 PWM_USEC(625) PWM_POLARITY_NORMAL>;
+			label = "Motor Enable (Q0.2)";
+		};
+		out_pump_spd: out_pump_spd {
+			pwms = <&pca9685 13 PWM_USEC(625) PWM_POLARITY_NORMAL>;
+			label = "Pump Speed (Q0.5, analog out 1)";
+		};
+	};
+};
+
+&i2c0 {
+	lcd: lcd@28 {
+		compatible = "i2c-device";
+		reg = <0x28>;
+		label = "LK204 LCD";
+	};
+};

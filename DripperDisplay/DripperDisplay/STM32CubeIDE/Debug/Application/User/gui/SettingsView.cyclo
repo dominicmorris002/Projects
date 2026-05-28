@@ -1,0 +1,21 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Bitmap.hpp:136:5:touchgfx::Bitmap::Bitmap(touchgfx::BitmapId)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:35:18:virtual void touchgfx::ToggleButton::setBitmaps(const touchgfx::Bitmap&, const touchgfx::Bitmap&)	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/settings_screen/SettingsViewBase.hpp:52:26:FrontendApplication& SettingsViewBase::application()	1
+../../TouchGFX/gui/include/gui/settings_screen/SettingsView.hpp:11:13:SettingsView::~SettingsView()	1
+../../TouchGFX/gui/include/gui/settings_screen/SettingsView.hpp:11:13:virtual SettingsView::~SettingsView()	1
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:17:1:SettingsView::SettingsView()	1
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:25:6:virtual void SettingsView::setupScreen()	1
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:44:6:virtual void SettingsView::tearDownScreen()	1
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:49:6:virtual void SettingsView::handleTickEvent()	3
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:65:6:virtual void SettingsView::DripRateMinusPress()	2
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:71:6:virtual void SettingsView::DripRatePlusPress()	2
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:77:6:void SettingsView::updateDripRateDisplay()	1
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:85:6:virtual void SettingsView::ShutdownDelayMinusPress()	2
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:91:6:virtual void SettingsView::ShutdownDelayPlusPress()	2
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:97:6:void SettingsView::updateShutdownDelayDisplay()	1
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:105:6:virtual void SettingsView::PumpShutdownPress()	1
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:120:6:void SettingsView::updateToggleDisplay()	1
+C:/Projects/DripperDisplay/DripperDisplay/TouchGFX/gui/src/settings_screen/SettingsView.cpp:128:6:virtual void SettingsView::SavePress()	2

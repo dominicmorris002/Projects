@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_transport.c:61:5:mqtt_transport_connect	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_transport.c:66:5:mqtt_transport_write	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_transport.c:73:5:mqtt_transport_write_msg	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_transport.c:79:5:mqtt_transport_read	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_transport.c:86:5:mqtt_transport_disconnect	32	static

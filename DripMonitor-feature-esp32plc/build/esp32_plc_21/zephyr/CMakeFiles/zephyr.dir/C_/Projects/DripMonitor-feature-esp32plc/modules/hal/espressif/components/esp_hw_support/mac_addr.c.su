@@ -1,0 +1,12 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/mac_addr.c:73:12:get_idx	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/mac_addr.c:212:18:get_efuse_mac_custom	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/mac_addr.c:269:18:get_efuse_factory_mac	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/mac_addr.c:84:18:get_mac_addr_from_mac_table	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/mac_addr.c:126:8:esp_mac_addr_len_get	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/mac_addr.c:136:11:esp_iface_mac_addr_set	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/mac_addr.c:164:11:esp_base_mac_addr_set	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/mac_addr.c:199:11:esp_efuse_mac_get_custom	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/mac_addr.c:256:11:esp_efuse_mac_get_default	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/mac_addr.c:303:11:esp_derive_local_mac	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/mac_addr.c:324:11:esp_read_mac	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/mac_addr.c:169:11:esp_base_mac_addr_get	32	static

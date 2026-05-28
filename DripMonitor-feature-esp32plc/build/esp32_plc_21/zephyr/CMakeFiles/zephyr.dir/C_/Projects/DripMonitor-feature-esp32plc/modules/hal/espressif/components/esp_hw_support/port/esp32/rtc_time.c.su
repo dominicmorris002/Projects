@@ -1,0 +1,8 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_time.c:37:17:rtc_clk_cal_internal	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_time.c:114:10:rtc_clk_cal_ratio	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_time.c:130:10:rtc_clk_cal	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_time.c:146:10:rtc_time_us_to_slowclk	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_time.c:155:10:rtc_time_slowclk_to_us	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_time.c:160:10:rtc_time_get	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_time.c:165:6:rtc_clk_wait_for_slow_cycle	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_time.c:187:10:rtc_clk_freq_cal	32	static

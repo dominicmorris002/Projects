@@ -1,0 +1,7 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/cache_hal_esp32.c:11:6:cache_hal_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/cache_hal_esp32.c:22:6:cache_hal_suspend	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/cache_hal_esp32.c:33:6:cache_hal_resume	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/cache_hal_esp32.c:44:6:cache_hal_is_cache_enabled	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/cache_hal_esp32.c:53:6:cache_hal_vaddr_to_cache_level_id	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/cache_hal_esp32.c:61:10:cache_hal_get_cache_line_size	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/cache_hal_esp32.c:74:6:cache_hal_invalidate_addr	32	static

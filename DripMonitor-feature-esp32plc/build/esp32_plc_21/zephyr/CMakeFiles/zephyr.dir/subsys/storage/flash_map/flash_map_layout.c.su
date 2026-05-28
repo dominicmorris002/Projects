@@ -1,0 +1,3 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map_layout.c:62:13:get_sectors_cb	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map_layout.c:94:5:flash_area_sectors	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map_layout.c:79:5:flash_area_get_sectors	48	static

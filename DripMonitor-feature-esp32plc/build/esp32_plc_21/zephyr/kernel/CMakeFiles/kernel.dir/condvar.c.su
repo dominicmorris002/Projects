@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/include/ksched.h:170:20:unpend_thread_no_timeout	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/condvar.c:21:5:z_impl_k_condvar_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/condvar.c:44:5:z_impl_k_condvar_signal	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/condvar.c:76:5:z_impl_k_condvar_broadcast	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/condvar.c:114:5:z_impl_k_condvar_wait	32	static

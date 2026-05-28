@@ -1,0 +1,10 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_eventfd.c:130:12:zvfs_eventfd_write_locked	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_eventfd.c:215:12:zvfs_eventfd_ioctl_op	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_eventfd.c:171:12:zvfs_eventfd_close_op	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_eventfd.c:293:16:zvfs_eventfd_rw_op	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_eventfd.c:166:16:zvfs_eventfd_write_op	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_eventfd.c:161:16:zvfs_eventfd_read_op	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_eventfd.c:100:12:zvfs_eventfd_read_locked	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_eventfd.c:396:5:zvfs_eventfd	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_eventfd.c:437:5:zvfs_eventfd_read	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_eventfd.c:471:5:zvfs_eventfd_write	64	static

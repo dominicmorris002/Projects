@@ -1,0 +1,7 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/efuse_hal.c:17:6:efuse_hal_get_mac	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/efuse_hal.c:23:20:efuse_hal_chip_revision	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/efuse_hal.c:28:20:efuse_hal_blk_version	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/efuse_hal.c:33:16:efuse_hal_get_disable_wafer_version_major	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/efuse_hal.c:38:20:efuse_hal_get_chip_ver_pkg	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/efuse_hal.c:43:16:efuse_hal_get_disable_blk_version_major	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/efuse_hal.c:48:16:efuse_hal_flash_encryption_enabled	32	static

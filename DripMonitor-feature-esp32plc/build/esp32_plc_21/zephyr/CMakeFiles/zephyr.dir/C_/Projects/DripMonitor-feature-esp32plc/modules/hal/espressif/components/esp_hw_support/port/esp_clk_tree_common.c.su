@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c:78:10:esp_clk_tree_rc_fast_d256_get_freq_hz	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c:98:10:esp_clk_tree_xtal32k_get_freq_hz	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c:137:10:esp_clk_tree_lp_slow_get_freq_hz	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c:152:10:esp_clk_tree_rc_fast_get_freq_hz	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c:177:10:esp_clk_tree_lp_fast_get_freq_hz	32	static

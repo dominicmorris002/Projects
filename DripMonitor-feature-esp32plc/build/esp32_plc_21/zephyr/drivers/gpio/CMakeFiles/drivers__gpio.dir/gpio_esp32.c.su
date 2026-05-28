@@ -1,0 +1,14 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpio/esp32/include/hal/rtc_io_ll.h:142:20:rtcio_ll_set_drive_capability	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_esp32.c:331:12:gpio_esp32_port_get_raw	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_esp32.c:346:12:gpio_esp32_port_set_masked_raw	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_esp32.c:366:12:gpio_esp32_port_set_bits_raw	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_esp32.c:382:12:gpio_esp32_port_clear_bits_raw	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_esp32.c:398:12:gpio_esp32_port_toggle_bits	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_esp32.c:450:12:gpio_esp32_pin_interrupt_configure	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_esp32.c:485:12:gpio_esp32_manage_callback	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_esp32.c:494:17:gpio_esp32_get_pending_int	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_esp32.c:559:12:gpio_esp32_sys_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_esp32.c:509:23:gpio_esp32_fire_callbacks	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_esp32.c:648:23:gpio_esp32_isr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_esp32.c:592:12:gpio_esp32_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_esp32.c:101:22:gpio_esp32_config	64	static

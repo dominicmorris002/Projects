@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/drivers/i2c.h:875:19:z_impl_i2c_transfer	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp230xx.c:66:12:mcp230xx_bus_is_ready	64	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp230xx.c:27:12:mcp230xx_read_port_regs	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp230xx.c:46:12:mcp230xx_write_port_regs	48	static

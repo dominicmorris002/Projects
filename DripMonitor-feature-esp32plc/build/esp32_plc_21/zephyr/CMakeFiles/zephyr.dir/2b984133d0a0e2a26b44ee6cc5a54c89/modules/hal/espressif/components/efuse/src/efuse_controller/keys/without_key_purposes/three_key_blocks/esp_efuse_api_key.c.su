@@ -1,0 +1,15 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:59:27:esp_efuse_get_coding_scheme$part$0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:39:11:esp_efuse_set_write_protect	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:49:11:esp_efuse_set_read_protect	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:59:27:esp_efuse_get_coding_scheme	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:78:6:esp_efuse_block_is_empty	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:101:6:esp_efuse_get_key_dis_read	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:108:11:esp_efuse_set_key_dis_read	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:117:6:esp_efuse_get_key_dis_write	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:124:11:esp_efuse_set_key_dis_write	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:133:6:esp_efuse_key_block_unused	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:147:21:esp_efuse_get_key_purpose	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:164:6:esp_efuse_get_keypurpose_dis_write	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:170:6:esp_efuse_find_purpose	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:187:11:esp_efuse_write_key	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c:212:11:esp_efuse_write_keys	48	static

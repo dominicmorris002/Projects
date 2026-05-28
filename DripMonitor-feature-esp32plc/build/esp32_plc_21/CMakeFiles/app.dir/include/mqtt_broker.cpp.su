@@ -1,0 +1,22 @@
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/log_msg.h:52:20:void z_log_msg_simple_create_1(const void*, uint32_t, const char*, uint32_t)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/cbprintf_cxx.h:315:20:void z_cbprintf_cxx_store_arg(uint8_t*, T) [with T = int]	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/cbprintf_cxx.h:315:20:void z_cbprintf_cxx_store_arg(uint8_t*, T) [with T = const char*]	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:480:5:int mqttBroker::pollSock(int)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:15:1:mqttBroker::mqttBroker(const char*, uint16_t, mqtt_evt_cb_t, sec_tag_t*, size_t)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:129:5:int mqttBroker::disconnect()	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:142:5:int mqttBroker::getConnectionStatus()	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:147:6:bool mqttBroker::getTopicSubscribeStatus()	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:438:5:int mqttBroker::brokerInit()	304	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:480:5:int mqttBroker::pollSock(int)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:400:5:int mqttBroker::brokerKeepAlive(int)	48	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:152:5:int mqttBroker::subscribeTopic(const char*)	64	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:498:5:int mqttBroker::waitForConnack(uint32_t)	48	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:80:5:int mqttBroker::connect()	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:528:10:uint16_t mqttBroker::getMsgID(std::vector<mqtt_publish_unacked>&)	48	static
+C:/Users/Owner/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32_zephyr-elf/xtensa-espressif_esp32_zephyr-elf/include/c++/14.3.0/bits/basic_string.h:285:7:constexpr void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_dispose() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:182:5:int mqttBroker::publishMsg(const char*, std::vector<key_value_pair>&)	1344	static
+C:/Users/Owner/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32_zephyr-elf/xtensa-espressif_esp32_zephyr-elf/include/c++/14.3.0/bits/vector.tcc:181:5:constexpr std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::_M_erase(iterator) [with _Tp = mqttBroker::mqtt_publish_unacked; _Alloc = std::allocator<mqttBroker::mqtt_publish_unacked>]	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:267:5:int mqttBroker::evtHandler(mqtt_client*, const mqtt_evt*, uint8_t*, size_t)	48	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:246:6:void mqttBroker::retryMsgs()	32	static
+C:/Users/Owner/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32_zephyr-elf/xtensa-espressif_esp32_zephyr-elf/include/c++/14.3.0/bits/basic_string.tcc:277:5:constexpr void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_assign(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/mqtt_broker.cpp:48:6:void mqttBroker::init(const std::string&, const std::string&, const std::string&)	32	static

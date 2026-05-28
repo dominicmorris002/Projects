@@ -1,0 +1,11 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmp.c:511:25:icmp_call_handlers	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmp.c:420:12:net_icmp_send_echo_request_timeout	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmp.c:54:5:net_icmp_init_ctx	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmp.c:107:5:net_icmp_cleanup_ctx	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmp.c:483:5:net_icmp_send_echo_request	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmp.c:497:5:net_icmp_send_echo_request_no_wait	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmp.c:553:18:net_icmp_call_ipv4_handlers	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmp.c:565:18:net_icmp_call_ipv6_handlers	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmp.c:577:5:net_icmp_register_offload_ping	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmp.c:609:5:net_icmp_unregister_offload_ping	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmp.c:632:5:net_icmp_get_offload_rsp_handler	32	static

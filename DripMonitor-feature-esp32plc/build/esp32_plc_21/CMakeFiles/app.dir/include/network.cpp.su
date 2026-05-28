@@ -1,0 +1,8 @@
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/network.cpp:62:6:static void Network::net_l4_event_cb(net_mgmt_event_callback*, uint64_t, net_if*)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/cbprintf_cxx.h:315:20:void z_cbprintf_cxx_store_arg(uint8_t*, T) [with T = int]	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/cbprintf_cxx.h:315:20:void z_cbprintf_cxx_store_arg(uint8_t*, T) [with T = const char*]	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/network.cpp:62:6:static void Network::net_l4_event_cb(net_mgmt_event_callback*, uint64_t, net_if*)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/network.cpp:19:1:Network::Network()	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/network.cpp:24:6:void Network::register_event_callback(network_event_callback_t)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/network.cpp:29:5:int Network::init()	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include/network.cpp:90:5:int Network::sync_clock()	336	dynamic,bounded

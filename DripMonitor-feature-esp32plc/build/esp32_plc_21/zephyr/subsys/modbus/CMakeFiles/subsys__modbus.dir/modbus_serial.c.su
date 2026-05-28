@@ -1,0 +1,16 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/drivers/gpio.h:1066:19:gpio_pin_configure_dt.constprop	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/drivers/gpio.h:1719:19:gpio_pin_set_dt.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:52:13:modbus_serial_tx_off.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:98:13:modbus_serial_rx_off	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:76:13:modbus_serial_rx_on	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:65:13:modbus_serial_rx_fifo_drain.isra	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:433:13:uart_cb_handler$part$0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:433:13:uart_cb_handler	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:493:13:rtu_tmr_handler$part$0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:493:13:rtu_tmr_handler	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:587:6:modbus_serial_rx_disable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:592:6:modbus_serial_rx_enable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:597:5:modbus_serial_rx_adu	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:624:5:modbus_serial_tx_adu	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:642:5:modbus_serial_init	80	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_serial.c:708:6:modbus_serial_disable	32	static

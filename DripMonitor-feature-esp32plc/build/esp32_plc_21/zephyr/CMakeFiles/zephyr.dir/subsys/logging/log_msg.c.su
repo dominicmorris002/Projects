@@ -1,0 +1,9 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/cbprintf.h:528:19:z_cbprintf_cpy	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_msg.c:31:6:z_log_msg_finalize	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_msg.c:96:13:z_log_msg_simple_create	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_msg.c:133:6:z_impl_z_log_msg_simple_create_0	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_msg.c:182:6:z_impl_z_log_msg_simple_create_1	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_msg.c:232:6:z_impl_z_log_msg_simple_create_2	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_msg.c:283:6:z_impl_z_log_msg_static_create	144	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_msg.c:348:6:z_log_msg_runtime_vcreate	80	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_msg.c:416:9:log_msg_get_source_id	32	static

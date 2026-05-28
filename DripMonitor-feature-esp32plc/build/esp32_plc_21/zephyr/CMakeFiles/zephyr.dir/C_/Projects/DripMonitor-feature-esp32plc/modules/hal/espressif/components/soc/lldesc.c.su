@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/soc/lldesc.c:10:6:lldesc_setup_link_constrained	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/soc/lldesc.c:39:5:lldesc_get_received_len	32	static

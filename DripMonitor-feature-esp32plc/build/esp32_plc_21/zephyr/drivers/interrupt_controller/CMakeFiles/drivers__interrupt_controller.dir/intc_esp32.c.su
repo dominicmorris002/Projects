@@ -1,0 +1,17 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/arch/xtensa/irq.h:70:20:z_xt_ints_off	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:98:30:find_desc_for_int	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:449:23:shared_intr_isr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:228:13:is_vect_desc_usable	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:116:30:get_desc_for_int	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:171:5:esp_intr_mark_shared	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:196:5:esp_intr_reserve	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:689:15:esp_intr_set_in_iram	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:778:5:esp_intr_get_intno	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:783:5:esp_intr_get_cpu	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:802:15:esp_intr_enable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:832:15:esp_intr_disable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:466:5:esp_intr_alloc_intrstatus	112	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:675:5:esp_intr_alloc	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:713:5:esp_intr_free	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:877:16:esp_intr_noniram_disable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/interrupt_controller/intc_esp32.c:896:16:esp_intr_noniram_enable	32	static

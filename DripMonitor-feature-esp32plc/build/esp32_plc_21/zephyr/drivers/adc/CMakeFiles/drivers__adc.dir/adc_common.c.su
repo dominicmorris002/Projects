@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/adc/adc_common.c:38:5:adc_gain_invert	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/adc/adc_common.c:54:5:adc_gain_invert_64	32	static

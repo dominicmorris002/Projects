@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_system/port/soc/esp32/system_internal.c:30:6:esp_system_reset_modules_on_exit	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_system/port/soc/esp32/system_internal.c:70:6:esp_restart_noos	64	static

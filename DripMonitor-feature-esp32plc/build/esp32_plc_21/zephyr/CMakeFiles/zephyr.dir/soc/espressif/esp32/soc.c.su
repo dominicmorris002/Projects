@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/soc/espressif/esp32/soc.c:23:16:__esp_platform_app_start	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/soc/espressif/esp32/soc.c:50:16:__esp_platform_mcuboot_start	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/soc/espressif/esp32/soc.c:59:15:arch_printk_char_out	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/soc/espressif/esp32/soc.c:68:6:sys_arch_reboot	32	static

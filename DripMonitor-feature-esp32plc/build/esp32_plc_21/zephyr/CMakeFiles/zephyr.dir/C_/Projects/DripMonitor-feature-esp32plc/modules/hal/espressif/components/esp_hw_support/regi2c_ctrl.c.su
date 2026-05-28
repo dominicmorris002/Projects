@@ -1,0 +1,8 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c:23:9:regi2c_ctrl_read_reg	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c:33:9:regi2c_ctrl_read_reg_mask	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c:43:6:regi2c_ctrl_write_reg	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c:52:6:regi2c_ctrl_write_reg_mask	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c:61:16:regi2c_enter_critical	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c:68:16:regi2c_exit_critical	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c:105:6:regi2c_saradc_enable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c:115:6:regi2c_saradc_disable	32	static

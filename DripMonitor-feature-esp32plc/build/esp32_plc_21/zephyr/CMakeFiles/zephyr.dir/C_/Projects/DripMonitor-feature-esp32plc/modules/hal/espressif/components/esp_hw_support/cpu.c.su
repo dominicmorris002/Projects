@@ -1,0 +1,9 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/cpu.c:30:6:esp_cpu_stall	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/cpu.c:38:6:esp_cpu_unstall	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/cpu.c:46:6:esp_cpu_reset	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/cpu.c:52:6:esp_cpu_wait_for_intr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/cpu.c:73:11:esp_cpu_set_breakpoint	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/cpu.c:102:11:esp_cpu_clear_breakpoint	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/cpu.c:127:11:esp_cpu_set_watchpoint	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/cpu.c:167:11:esp_cpu_clear_watchpoint	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/cpu.c:199:6:esp_cpu_compare_and_set	32	static

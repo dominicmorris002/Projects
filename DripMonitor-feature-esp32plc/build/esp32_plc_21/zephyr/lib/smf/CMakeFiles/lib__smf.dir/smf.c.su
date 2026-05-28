@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/smf/smf.c:129:13:smf_execute_all_entry_actions.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/smf/smf.c:282:6:smf_set_initial	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/smf/smf.c:337:6:smf_set_state	64	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/smf/smf.c:458:6:smf_set_terminate	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/smf/smf.c:466:9:smf_run_state	32	static

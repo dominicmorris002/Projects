@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/thread.c:117:6:arch_new_thread	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/thread.c:151:5:arch_float_disable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/thread.c:158:5:arch_float_enable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/thread.c:186:5:arch_coprocessors_disable	32	static

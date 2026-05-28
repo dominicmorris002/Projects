@@ -1,0 +1,8 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_mmap.c:61:11:spi_flash_mmap	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_mmap.c:166:11:spi_flash_mmap_pages	80	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_mmap.c:245:6:spi_flash_munmap	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_mmap.c:262:6:spi_flash_mmap_dump	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_mmap.c:268:10:spi_flash_mmap_get_free_pages	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_mmap.c:305:16:spi_flash_check_and_flush_cache	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_mmap.c:344:8:spi_flash_cache2phys	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_mmap.c:391:14:spi_flash_phys2cache	48	static

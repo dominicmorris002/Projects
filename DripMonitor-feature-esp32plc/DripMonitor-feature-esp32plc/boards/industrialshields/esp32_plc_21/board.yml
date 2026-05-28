@@ -1,0 +1,6 @@
+board:
+  name: esp32_plc_21
+  full_name: Industrial Shields ESP32 PLC 21 (V3)
+  vendor: industrialshields
+  socs:
+    - name: esp32

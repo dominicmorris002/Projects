@@ -1,0 +1,17 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/include/ksched.h:170:20:unpend_thread_no_timeout	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:132:16:queue_insert	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:30:7:z_queue_node_peek	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:58:6:z_impl_k_queue_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:99:6:z_impl_k_queue_cancel_wait	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:188:6:k_queue_insert	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:197:6:k_queue_append	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:206:6:k_queue_prepend	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:215:9:z_impl_k_queue_alloc_append	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:236:9:z_impl_k_queue_alloc_prepend	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:257:5:k_queue_append_list	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:300:5:k_queue_merge_slist	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:335:7:z_impl_k_queue_get	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:372:6:k_queue_remove	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:383:6:k_queue_unique_append	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:404:7:z_impl_k_queue_peek_head	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/queue.c:413:7:z_impl_k_queue_peek_tail	32	static

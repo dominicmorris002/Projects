@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/common/esp_restart.c:24:11:esp_register_shutdown_handler	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/common/esp_restart.c:37:11:esp_unregister_shutdown_handler	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/common/esp_restart.c:53:16:esp_restart_noos_dig	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/common/esp_restart.c:96:6:esp_restart	32	static

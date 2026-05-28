@@ -1,0 +1,12 @@
+# Load Zephyr Arch Kconfig descriptions.
+osource "C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/rx/Kconfig"
+osource "C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/x86/Kconfig"
+osource "C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/Kconfig"
+osource "C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/sparc/Kconfig"
+osource "C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/riscv/Kconfig"
+osource "C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/posix/Kconfig"
+osource "C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/openrisc/Kconfig"
+osource "C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/mips/Kconfig"
+osource "C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/arm64/Kconfig"
+osource "C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/arm/Kconfig"
+osource "C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/arc/Kconfig"

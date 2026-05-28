@@ -1,0 +1,17 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.h:165:25:chunk_size	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.h:170:20:set_chunk_used	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:163:13:free_list_add	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:87:13:free_list_remove_bidx	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:119:13:free_list_remove	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:358:18:alloc_chunk	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:225:13:merge_chunks	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:209:13:split_chunks	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:547:13:inplace_realloc.isra	112	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:276:6:sys_heap_free	96	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:346:8:sys_heap_usable_size	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:417:7:sys_heap_alloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:459:7:sys_heap_noalign_alloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:466:7:sys_heap_aligned_alloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:665:7:sys_heap_realloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:692:7:sys_heap_aligned_realloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/heap/heap.c:726:6:sys_heap_init	32	static

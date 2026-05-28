@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/watchdog/wdt_esp32.c:202:23:wdt_esp32_isr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/watchdog/wdt_esp32.c:148:12:wdt_esp32_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/watchdog/wdt_esp32.c:111:12:wdt_esp32_install_timeout	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/watchdog/wdt_esp32.c:86:12:wdt_esp32_feed	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/watchdog/wdt_esp32.c:73:12:wdt_esp32_disable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/watchdog/wdt_esp32.c:97:12:wdt_esp32_set_config	32	static

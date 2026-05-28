@@ -1,0 +1,11 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_wdt/wdt_hal_iram.c:15:6:wdt_hal_init	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_wdt/wdt_hal_iram.c:90:6:wdt_hal_deinit	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_wdt/wdt_hal_iram.c:118:6:wdt_hal_config_stage	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_wdt/wdt_hal_iram.c:129:6:wdt_hal_write_protect_disable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_wdt/wdt_hal_iram.c:138:6:wdt_hal_write_protect_enable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_wdt/wdt_hal_iram.c:147:6:wdt_hal_enable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_wdt/wdt_hal_iram.c:158:6:wdt_hal_disable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_wdt/wdt_hal_iram.c:167:6:wdt_hal_handle_intr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_wdt/wdt_hal_iram.c:178:6:wdt_hal_feed	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_wdt/wdt_hal_iram.c:187:6:wdt_hal_set_flashboot_en	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_wdt/wdt_hal_iram.c:196:6:wdt_hal_is_enabled	32	static

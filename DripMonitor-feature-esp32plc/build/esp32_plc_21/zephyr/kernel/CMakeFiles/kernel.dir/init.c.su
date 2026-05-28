@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/init.c:220:13:z_sys_init_run_level	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/init.c:283:13:bg_thread_main	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/init.c:393:6:z_init_cpu	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/init.c:494:13:z_early_rand_get	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/init.c:538:20:z_cstart	48	static

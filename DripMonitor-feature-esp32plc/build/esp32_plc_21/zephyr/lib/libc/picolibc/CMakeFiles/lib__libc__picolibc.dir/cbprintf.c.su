@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/libc/picolibc/cbprintf.c:15:12:cbputc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/libc/picolibc/cbprintf.c:23:5:cbvprintf	80	static

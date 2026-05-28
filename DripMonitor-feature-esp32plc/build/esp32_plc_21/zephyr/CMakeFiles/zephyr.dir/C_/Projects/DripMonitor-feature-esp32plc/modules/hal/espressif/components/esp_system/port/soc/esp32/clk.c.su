@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_system/port/soc/esp32/clk.c:52:13:select_rtc_slow_clk	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_system/port/soc/esp32/clk.c:113:6:esp_rtc_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_system/port/soc/esp32/clk.c:119:28:esp_clk_init	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_system/port/soc/esp32/clk.c:203:28:esp_perip_clk_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_system/port/soc/esp32/clk.c:311:6:rtc_clk_select_rtc_slow_clk	32	static

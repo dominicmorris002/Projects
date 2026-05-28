@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c:31:18:spi_flash_chip_gd_get_caps	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c:57:11:spi_flash_chip_gd_detect_size	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c:132:11:spi_flash_chip_gd_suspend_cmd_conf	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c:119:11:spi_flash_chip_gd_get_io_mode	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c:86:11:spi_flash_chip_gd_probe	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c:102:11:spi_flash_chip_gd_set_io_mode	32	static

@@ -1,0 +1,9 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_tc.c:257:13:tc_rx_handler	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_tc.c:64:18:net_tc_try_submit_to_tx_queue	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_tc.c:85:18:net_tc_submit_to_rx_queue	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_tc.c:116:5:net_tx_priority2tc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_tc.c:134:5:net_rx_priority2tc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_tc.c:176:5:net_tc_tx_thread_priority	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_tc.c:191:5:net_tc_rx_thread_priority	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_tc.c:315:6:net_tc_tx_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_tc.c:372:6:net_tc_rx_init	64	static

@@ -1,0 +1,3 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_print.c:17:5:esp_rom_cvt$part$0	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_print.c:17:5:esp_rom_cvt	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_print.c:293:5:esp_rom_vprintf	128	static

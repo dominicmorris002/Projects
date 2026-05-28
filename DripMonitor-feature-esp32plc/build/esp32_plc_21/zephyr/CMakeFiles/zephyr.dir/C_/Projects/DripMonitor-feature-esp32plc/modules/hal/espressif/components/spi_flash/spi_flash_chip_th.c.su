@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c:11:11:spi_flash_chip_th_probe	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c:28:18:spi_flash_chip_th_get_caps	32	static

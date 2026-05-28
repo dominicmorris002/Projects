@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/common/soc_init.c:27:6:print_banner	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/common/soc_init.c:46:5:read_bootloader_header	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/common/soc_init.c:99:6:config_wdt	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/common/soc_init.c:124:5:check_bootloader_validity	32	static

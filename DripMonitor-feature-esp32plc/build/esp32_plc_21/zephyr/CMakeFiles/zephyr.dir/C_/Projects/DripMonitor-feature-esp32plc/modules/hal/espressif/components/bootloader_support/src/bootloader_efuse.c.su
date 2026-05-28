@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/src/bootloader_efuse.c:14:20:bootloader_common_get_chip_ver_pkg	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/src/bootloader_efuse.c:19:5:bootloader_clock_get_rated_freq_mhz	32	static

@@ -1,0 +1,17 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:237:27:esp_rom_spiflash_read_status	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:46:27:esp_rom_spiflash_wait_idle	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:335:34:esp_rom_spiflash_enable_write.constprop.isra	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:182:34:esp_rom_spiflash_program_page_internal.constprop	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:260:27:esp_rom_spiflash_read_statushigh	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:269:27:esp_rom_spiflash_write_status	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:73:55:esp_rom_spiflash_clear_bp	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:394:27:esp_rom_spiflash_set_bp	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:417:27:esp_rom_spiflash_config_readmode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:445:27:esp_rom_spiflash_erase_chip	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:458:27:esp_rom_spiflash_erase_block	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:478:27:esp_rom_spiflash_erase_sector	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:499:27:esp_rom_spiflash_write	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:546:27:esp_rom_spiflash_write_encrypted	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:572:27:esp_rom_spiflash_read	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:633:27:esp_rom_spiflash_erase_area	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c:703:27:esp_rom_spiflash_write_disable	32	static

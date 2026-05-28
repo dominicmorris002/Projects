@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_encrypt_hal_iram.c:12:6:spi_flash_encryption_hal_enable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_encrypt_hal_iram.c:23:6:spi_flash_encryption_hal_disable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_encrypt_hal_iram.c:28:6:spi_flash_encryption_hal_prepare	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_encrypt_hal_iram.c:38:6:spi_flash_encryption_hal_done	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_encrypt_hal_iram.c:44:6:spi_flash_encryption_hal_destroy	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_encrypt_hal_iram.c:49:6:spi_flash_encryption_hal_check	32	static

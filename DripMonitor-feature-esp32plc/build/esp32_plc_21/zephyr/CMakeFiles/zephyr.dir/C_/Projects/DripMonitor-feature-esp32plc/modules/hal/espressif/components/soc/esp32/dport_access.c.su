@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/soc/esp32/dport_access.c:13:20:esp_dport_access_reg_read	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/soc/esp32/dport_access.c:35:20:esp_dport_access_sequence_reg_read	32	static

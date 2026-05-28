@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_rx.c:185:12:mqtt_read_message_chunk	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_rx.c:328:5:mqtt_handle_rx	80	static

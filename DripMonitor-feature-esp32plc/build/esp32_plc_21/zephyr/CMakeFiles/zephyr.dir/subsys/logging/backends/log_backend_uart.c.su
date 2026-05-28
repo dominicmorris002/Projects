@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/backends/log_backend_uart.c:137:12:format_set	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/backends/log_backend_uart.c:147:13:log_backend_uart_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/backends/log_backend_uart.c:184:13:panic	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/backends/log_backend_uart.c:209:13:dropped	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/backends/log_backend_uart.c:126:13:process	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/backends/log_backend_uart.c:82:12:char_out	32	static

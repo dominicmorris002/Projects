@@ -1,0 +1,218 @@
+/*
+ * Copyright (c) 2026 New Mexico Drip Inc.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Industrial Shields ESP32 PLC 21 (hardware revision V3).
+ * MCU: ESP32-WROOM-32UE-N16 (single-core PRO_CPU usage, 16 MB flash, no PSRAM).
+ *
+ * On-board peripherals (all on the internal I2C0 bus, GPIO21 SDA / GPIO22 SCL):
+ *   - MCP23008 GPIO expander @ 0x21  -> digital inputs I0_0..I0_4
+ *   - ADS1015  ADC            @ 0x48 -> analog/digital inputs I0_9..I0_12 (Q0_5..7 readback)
+ *   - ADS1015  ADC            @ 0x49 -> analog/digital inputs I0_7..I0_8
+ *   - PCA9685  PWM/output drv @ 0x40 -> digital outputs Q0_0..Q0_7
+ *   - DS3231   RTC            @ 0x68
+ *
+ * SPI3 (VSPI) bus, MOSI=GPIO23 / MISO=GPIO19 / SCK=GPIO18:
+ *   - WIZnet W5500 Ethernet controller, CS=GPIO15
+ *   - microSD card slot,                CS=GPIO13
+ *
+ * UART0 (GPIO1/3): console / Industrial Shields USB bridge.
+ * UART2 (GPIO17/16) + GPIO4 DE/RE: RS-485 transceiver on the screw terminals.
+ *
+ * Direct ESP32 GPIO routed to screw terminals on PLC 21:
+ *   I0_5  = GPIO27 (digital input)
+ *   I0_6  = GPIO26 (digital input)
+ *   I_VP  = GPIO36 (analog only)
+ *   I_VN  = GPIO39 (analog only)
+ *
+ * Direct ESP32 GPIO routed to screw terminals on PLC 21:
+ *   - GPIO_0 (V3 only) = MCP23008 expander pin 7 (front-panel exposed pin).
+ */
+
+/dts-v1/;
+
+#include <espressif/esp32/esp32_wroom_32ue_n16.dtsi>
+#include "esp32_plc_21-pinctrl.dtsi"
+#include <espressif/partitions_0x1000_default_16M.dtsi>
+
+/ {
+	model = "Industrial Shields ESP32 PLC 21 V3 (PROCPU)";
+	compatible = "industrialshields,esp32-plc-21", "espressif,esp32";
+
+	chosen {
+		zephyr,sram          = &sram1;
+		zephyr,console       = &uart0;
+		zephyr,shell-uart    = &uart0;
+		zephyr,flash         = &flash0;
+		zephyr,code-partition = &slot0_partition;
+		zephyr,uart-mcumgr   = &uart0;
+	};
+
+	aliases {
+		watchdog0 = &wdt0;
+		uart-0    = &uart0;
+		uart-485  = &uart2;
+		i2c-0     = &i2c0;
+		rtc       = &ds3231;
+		eth0      = &eth_w5500;
+		sdhc0     = &sd_slot;
+	};
+};
+
+&uart0 {
+	status = "okay";
+	current-speed = <115200>;
+	pinctrl-0 = <&uart0_default>;
+	pinctrl-names = "default";
+};
+
+/* RS-485 transceiver on UART2.
+ *
+ * GPIO17 = TX  (→ MAX485 DI)
+ * GPIO16 = RX  (← MAX485 RO)
+ * GPIO4  = DE/RE direction control, asserted HIGH during transmit.
+ *
+ * The `de-gpios` property is consumed by the zephyr,modbus-serial child
+ * driver to toggle the MAX485 direction pin around each frame.
+ * Physical requirement: DIP switch 3 (A-zone) must be set to OFF.
+ */
+&uart2 {
+	status = "okay";
+	current-speed = <9600>;
+	pinctrl-0 = <&uart2_default>;
+	pinctrl-names = "default";
+
+	modbus_rs485: modbus_rs485 {
+		compatible = "zephyr,modbus-serial";
+		status = "okay";
+		de-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+	};
+};
+
+&gpio0 {
+	status = "okay";
+};
+
+&gpio1 {
+	status = "okay";
+};
+
+&i2c0 {
+	status = "okay";
+	clock-frequency = <I2C_BITRATE_STANDARD>;
+	sda-gpios = <&gpio0 21 GPIO_OPEN_DRAIN>;
+	scl-gpios = <&gpio0 22 GPIO_OPEN_DRAIN>;
+	pinctrl-0 = <&i2c0_default>;
+	pinctrl-names = "default";
+
+	mcp23008: gpio@21 {
+		compatible = "microchip,mcp23008";
+		reg = <0x21>;
+		gpio-controller;
+		#gpio-cells = <2>;
+		ngpios = <8>;
+		status = "okay";
+	};
+
+	ads1015_48: adc@48 {
+		compatible = "ti,ads1015";
+		reg = <0x48>;
+		#io-channel-cells = <1>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		status = "okay";
+	};
+
+	ads1015_49: adc@49 {
+		compatible = "ti,ads1015";
+		reg = <0x49>;
+		#io-channel-cells = <1>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		status = "okay";
+	};
+
+	pca9685: pwm@40 {
+		compatible = "nxp,pca9685-pwm";
+		reg = <0x40>;
+		#pwm-cells = <3>;
+		status = "okay";
+	};
+
+	ds3231_mfd: ds3231@68 {
+		compatible = "maxim,ds3231-mfd";
+		reg = <0x68>;
+		status = "okay";
+
+		ds3231: ds3231-rtc {
+			compatible = "maxim,ds3231-rtc";
+			status = "okay";
+			/* INT/SQW pin is not routed to the ESP32 on the PLC 21,
+			 * so alarms / countdown features are unavailable.  The
+			 * driver still requires `isw-gpios` to be present at
+			 * compile time, so we point it at GPIO34 (input-only,
+			 * NC on this PLC variant) as a placeholder.  Time-set
+			 * with sub-second accuracy will not work, but plain
+			 * time-of-day operation does.
+			 */
+			isw-gpios = <&gpio1 2 GPIO_ACTIVE_LOW>; /* GPIO34, NC */
+		};
+	};
+};
+
+&spi3 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	status = "okay";
+	pinctrl-0 = <&spim3_default>;
+	pinctrl-names = "default";
+	/* CS pins for: W5500 (slot 0), SD (slot 1). */
+	cs-gpios = <&gpio0 15 GPIO_ACTIVE_LOW>,
+		   <&gpio0 13 GPIO_ACTIVE_LOW>;
+
+	eth_w5500: eth@0 {
+		compatible = "wiznet,w5500";
+		reg = <0x0>;
+		spi-max-frequency = <DT_FREQ_M(20)>;
+		/* INT pin is not routed on the PLC 21 PCB; point at GPIO34
+		 * (input-only, not connected) as a dummy to satisfy the
+		 * binding requirement. Polling is used instead (see defconfig). */
+		int-gpios = <&gpio1 2 GPIO_ACTIVE_LOW>; /* GPIO34, NC */
+		status = "okay";
+	};
+
+	sd_slot: sdhc@1 {
+		compatible = "zephyr,sdhc-spi-slot";
+		reg = <1>;
+		spi-max-frequency = <DT_FREQ_M(20)>;
+		status = "okay";
+
+		mmc {
+			compatible = "zephyr,sdmmc-disk";
+			disk-name = "SD";
+			status = "okay";
+		};
+	};
+};
+
+&trng0 {
+	status = "okay";
+};
+
+&wdt0 {
+	status = "okay";
+};
+
+/* On-board WiFi/Bluetooth radios are present in the ESP32-WROOM-32UE module
+ * but the PLC 21 has no antenna populated for them and the user-facing
+ * connectivity is Ethernet only.  Leave both disabled to save RAM/flash and
+ * to make sure no RF activity happens unexpectedly.
+ */
+&wifi {
+	status = "disabled";
+};
+
+&esp32_bt_hci {
+	status = "disabled";
+};

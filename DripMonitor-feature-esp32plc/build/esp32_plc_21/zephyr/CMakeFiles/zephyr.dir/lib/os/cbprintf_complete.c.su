@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/cbprintf_complete.c:704:13:_ldiv5	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/cbprintf_complete.c:790:14:encode_uint	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/cbprintf_complete.c:1348:12:outs	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/cbprintf_complete.c:1369:5:z_cbvprintf_impl	176	static

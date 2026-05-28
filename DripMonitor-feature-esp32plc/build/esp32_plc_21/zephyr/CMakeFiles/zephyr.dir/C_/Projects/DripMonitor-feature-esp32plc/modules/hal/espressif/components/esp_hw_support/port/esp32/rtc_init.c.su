@@ -1,0 +1,3 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_init.c:20:6:rtc_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_init.c:118:22:rtc_vddsdio_get_config	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_init.c:157:6:rtc_vddsdio_set_config	32	static

@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/esp32/esp_efuse_fields.c:26:10:esp_efuse_get_pkg_ver	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/esp32/esp_efuse_fields.c:34:6:esp_efuse_disable_basic_rom_console	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/esp32/esp_efuse_fields.c:42:11:esp_efuse_disable_rom_download_mode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/esp32/esp_efuse_fields.c:63:11:esp_efuse_set_rom_log_scheme	32	static

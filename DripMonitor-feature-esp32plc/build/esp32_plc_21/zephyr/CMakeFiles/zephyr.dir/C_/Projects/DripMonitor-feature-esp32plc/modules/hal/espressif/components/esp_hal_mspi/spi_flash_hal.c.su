@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal.c:24:17:get_flash_clock_divider	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal.c:103:11:spi_flash_hal_init	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal.c:155:6:spi_flash_hal_supports_direct_write	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal.c:162:6:spi_flash_hal_supports_direct_read	32	static

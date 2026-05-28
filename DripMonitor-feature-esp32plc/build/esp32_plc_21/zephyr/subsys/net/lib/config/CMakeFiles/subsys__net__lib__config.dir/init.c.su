@@ -1,0 +1,7 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/net/net_if.h:895:20:net_if_flag_is_set	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/config/init.c:480:13:iface_find_cb	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/config/init.c:352:13:iface_up_handler	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/config/init.c:395:5:net_config_init_by_iface	80	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/config/init.c:474:5:net_config_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/config/init.c:491:5:net_config_init_app	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/config/init.c:557:12:init_app	32	static

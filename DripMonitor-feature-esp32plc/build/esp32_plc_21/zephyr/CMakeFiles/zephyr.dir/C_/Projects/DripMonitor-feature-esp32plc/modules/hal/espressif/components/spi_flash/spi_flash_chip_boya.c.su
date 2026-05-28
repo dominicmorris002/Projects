@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c:12:11:spi_flash_chip_boya_probe	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c:29:18:spi_flash_chip_boya_get_caps	32	static

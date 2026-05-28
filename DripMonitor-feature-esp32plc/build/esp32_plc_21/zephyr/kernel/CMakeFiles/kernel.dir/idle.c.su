@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/idle.c:22:6:idle	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/idle.c:97:13:arch_spin_relax	32	static

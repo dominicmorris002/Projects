@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/drivers/i2c.h:875:19:z_impl_i2c_transfer	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/mfd/mfd_ds3231.c:57:12:mfd_ds3231_init$part$0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/mfd/mfd_ds3231.c:57:12:mfd_ds3231_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/mfd/mfd_ds3231.c:27:5:mfd_ds3231_i2c_get_registers	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/mfd/mfd_ds3231.c:43:5:mfd_ds3231_i2c_set_registers	64	static

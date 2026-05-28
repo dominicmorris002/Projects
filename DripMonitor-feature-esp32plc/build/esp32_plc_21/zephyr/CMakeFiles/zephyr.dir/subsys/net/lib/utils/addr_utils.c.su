@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/utils/addr_utils.c:11:13:net_addr_str_find_port	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/utils/addr_utils.c:33:5:net_getaddrinfo_addr_str	96	static

@@ -1,0 +1,8 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_clock/esp32/clk_tree_hal.c:71:10:clk_hal_lp_slow_get_freq_hz	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_clock/esp32/clk_tree_hal.c:87:10:clk_hal_xtal_get_freq_mhz	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_clock/esp32/clk_tree_hal.c:96:10:clk_hal_apll_get_freq_hz	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_clock/esp32/clk_tree_hal.c:14:10:clk_hal_soc_root_get_freq_mhz	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_clock/esp32/clk_tree_hal.c:32:10:clk_hal_cpu_get_freq_hz	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_clock/esp32/clk_tree_hal.c:66:10:clk_hal_apb_get_freq_hz	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_clock/esp32/clk_tree_hal.c:110:6:clk_hal_clock_output_setup	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_clock/esp32/clk_tree_hal.c:115:6:clk_hal_clock_output_teardown	32	static

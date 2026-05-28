@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/sem.c:108:5:sys_sem_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/sem.c:116:5:sys_sem_give	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/sem.c:123:5:sys_sem_take	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/sem.c:135:14:sys_sem_count_get	32	static

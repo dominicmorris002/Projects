@@ -1,0 +1,8 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/spi/spi_context.h:447:21:spi_context_get_next_buf	32	static
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/log_msg.h:26:20:z_log_msg_simple_create_0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/drivers/gpio.h:1719:19:gpio_pin_set_dt.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/spi/spi_context.h:393:20:_spi_context_cs_control	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/spi/spi_context.h:429:20:spi_context_unlock_unconditionally	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/spi/spi_esp32_spim.c:719:12:spi_esp32_release	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/spi/spi_esp32_spim.c:699:12:spi_esp32_transceive	96	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/spi/spi_esp32_spim.c:424:12:spi_esp32_init	96	dynamic,bounded

@@ -1,0 +1,14 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:60:13:s_sar_power_acquire	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:70:13:s_sar_power_release	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:30:6:sar_periph_ctrl_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:38:6:sar_periph_ctrl_power_enable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:45:6:sar_periph_ctrl_power_disable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:88:6:sar_periph_ctrl_pwdet_power_acquire	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:93:6:sar_periph_ctrl_pwdet_power_release	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:102:6:sar_periph_ctrl_adc_oneshot_power_acquire	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:107:6:sar_periph_ctrl_adc_oneshot_power_release	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:112:6:sar_periph_ctrl_adc_continuous_power_acquire	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:117:6:sar_periph_ctrl_adc_continuous_power_release	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:125:6:sar_periph_ctrl_adc_reset	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:132:6:adc_reset_lock_acquire	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c:137:6:adc_reset_lock_release	32	static

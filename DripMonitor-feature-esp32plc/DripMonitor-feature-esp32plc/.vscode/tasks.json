@@ -1,0 +1,126 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build (esp32_plc_21)",
+			"detail": "Incremental west build for the Industrial Shields ESP32 PLC 21 (auto-pristine).",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"command": "west",
+			"args": [
+				"build",
+				"-p", "auto",
+				"-b", "esp32_plc_21/esp32/procpu",
+				"-d", "${workspaceFolder}/build/esp32_plc_21",
+				"${workspaceFolder}"
+			],
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{
+			"label": "Build (esp32_plc_21, pristine)",
+			"detail": "Force-clean rebuild for the ESP32 PLC 21 — wipes build/esp32_plc_21 first.",
+			"type": "shell",
+			"group": "build",
+			"command": "west",
+			"args": [
+				"build",
+				"-p", "always",
+				"-b", "esp32_plc_21/esp32/procpu",
+				"-d", "${workspaceFolder}/build/esp32_plc_21",
+				"${workspaceFolder}"
+			],
+			"options": {
+				"env": {
+					"ZEPHYR_BASE": "${userHome}/zephyr-4.4.0/zephyr"
+				}
+			},
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{
+			"label": "Build (custom board…)",
+			"detail": "Prompt for a board target and pristine mode; build into build/<board>/.",
+			"type": "shell",
+			"group": "build",
+			"command": "west",
+			"args": [
+				"build",
+				"-p", "${input:pristine}",
+				"-b", "${input:board}",
+				"-d", "${workspaceFolder}/build/${input:board}",
+				"${workspaceFolder}"
+			],
+			"options": {
+				"env": {
+					"ZEPHYR_BASE": "${userHome}/zephyr-4.4.0/zephyr"
+				}
+			},
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{
+			"label": "Flash (esp32_plc_21)",
+			"detail": "Flash the most recent build to the PLC over /dev/ttyUSB0 (CP2102N USB-UART bridge).",
+			"type": "shell",
+			"command": "west",
+			"args": [
+				"flash",
+				"-d", "${workspaceFolder}/build/esp32_plc_21",
+				"--esp-device", "/dev/ttyUSB0"
+			],
+			"options": {
+				"env": {
+					"ZEPHYR_BASE": "${userHome}/zephyr-4.4.0/zephyr"
+				}
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Build & Flash (esp32_plc_21)",
+			"detail": "Run an incremental build, then flash the resulting image to the PLC.",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"Build (esp32_plc_21)",
+				"Flash (esp32_plc_21)"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "Serial Monitor (/dev/ttyUSB0)",
+			"detail": "Attach to the PLC's USB-UART console at 115200 baud (Ctrl-A k to quit picocom).",
+			"type": "shell",
+			"command": "picocom",
+			"args": [
+				"-b", "115200",
+				"/dev/ttyUSB0"
+			],
+			"problemMatcher": []
+		}
+	],
+	"inputs": [
+		{
+			"id": "board",
+			"type": "promptString",
+			"default": "esp32_plc_21/esp32/procpu",
+			"description": "Zephyr board target (e.g. esp32_plc_21/esp32/procpu, esp32_devkitc/esp32/procpu)."
+		},
+		{
+			"id": "pristine",
+			"type": "pickString",
+			"description": "When to do a pristine (clean) build:",
+			"default": "auto",
+			"options": [
+				"auto",
+				"always",
+				"never"
+			]
+		}
+	]
+}

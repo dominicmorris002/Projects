@@ -1,0 +1,7 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/udp.c:21:5:net_udp_create	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/udp.c:39:5:net_udp_finalize	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/udp.c:74:21:net_udp_get_hdr	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/udp.c:105:21:net_udp_set_hdr	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/udp.c:140:5:net_udp_register	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/udp.c:155:5:net_udp_unregister	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/udp.c:160:21:net_udp_input	48	static

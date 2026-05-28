@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dispatcher.c:188:6:dns_dispatcher_svc_handler	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dispatcher.c:198:5:dns_dispatcher_register	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dispatcher.c:330:5:dns_dispatcher_unregister	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dispatcher.c:362:6:dns_dispatcher_init	32	static

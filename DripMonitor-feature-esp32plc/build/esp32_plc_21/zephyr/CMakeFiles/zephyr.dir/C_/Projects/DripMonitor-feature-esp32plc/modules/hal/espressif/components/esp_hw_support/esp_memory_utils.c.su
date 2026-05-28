@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/esp_memory_utils.c:21:6:esp_ptr_dma_ext_capable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/esp_memory_utils.c:33:6:esp_ptr_executable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/esp_memory_utils.c:51:6:esp_ptr_byte_accessible	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/esp_memory_utils.c:80:6:esp_ptr_external_ram	32	static

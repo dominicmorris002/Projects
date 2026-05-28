@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_random.c:16:6:soc_random_enable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_random.c:70:6:soc_random_disable	32	static

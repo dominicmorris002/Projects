@@ -1,0 +1,11 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_decoder.c:61:12:unpack_uint16	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_decoder.c:159:5:unpack_variable_int	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_decoder.c:189:5:fixed_header_decode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_decoder.c:667:5:connect_ack_decode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_decoder.c:825:5:publish_decode	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_decoder.c:944:5:publish_ack_decode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_decoder.c:960:5:publish_receive_decode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_decoder.c:976:5:publish_release_decode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_decoder.c:992:5:publish_complete_decode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_decoder.c:1025:5:subscribe_ack_decode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/mqtt/mqtt_decoder.c:1069:5:unsubscribe_ack_decode	32	static

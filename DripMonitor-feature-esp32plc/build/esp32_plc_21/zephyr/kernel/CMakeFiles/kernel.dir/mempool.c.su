@@ -1,0 +1,11 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mempool.c:15:14:z_alloc_helper	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mempool.c:190:14:z_thread_alloc_helper	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mempool.c:59:6:k_free	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mempool.c:77:6:k_free_sched_locked	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mempool.c:95:7:k_aligned_alloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mempool.c:106:7:k_malloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mempool.c:117:7:k_calloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mempool.c:140:7:k_realloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mempool.c:182:6:k_thread_system_pool_assign	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mempool.c:211:7:z_thread_aligned_alloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mempool.c:216:7:z_thread_malloc	32	static

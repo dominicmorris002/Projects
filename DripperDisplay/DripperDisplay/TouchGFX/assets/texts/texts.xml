@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.26.1">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_2EHL" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_YIH1" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_JJYN" Alignment="Left" TypographyId="Typography5">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_95M7" Alignment="Center" TypographyId="Typography5">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_P586" Alignment="Left" TypographyId="Typography5">
+        <Translation Language="GB">1234567890</Translation>
+      </Text>
+      <Text Id="__SingleUse_OL3R" Alignment="Center" TypographyId="Typography5">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_RE9M" Alignment="Left" TypographyId="Typography3">
+        <Translation Language="GB">No Network</Translation>
+      </Text>
+      <Text Id="__SingleUse_0936" Alignment="Left" TypographyId="Typography3">
+        <Translation Language="GB">No Alarms</Translation>
+      </Text>
+      <Text Id="__SingleUse_16EK" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">STANDBY   ABCDEFGHIJKLMNOPQRSTUVWXYZ</Translation>
+      </Text>
+      <Text Id="__SingleUse_5S75" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_H64R" Alignment="Left" TypographyId="Typography3">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_9A63" Alignment="Left" TypographyId="Typography3">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_TOTK" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_8R3R" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="Inter-Bold.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="Inter-Bold.ttf" Size="80" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="Inter-Bold.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography1" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography2" Font="Inter-Bold.ttf" Size="150" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography3" Font="verdana.ttf" Size="47" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography4" Font="Inter-Bold.ttf" Size="44" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography5" Font="Inter-Bold.ttf" Size="60" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>

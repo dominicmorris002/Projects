@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/cbprintf_packaged.c:233:5:cbvprintf_package	128	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/cbprintf_packaged.c:819:5:cbprintf_package	96	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/cbprintf_packaged.c:831:5:cbpprintf_external	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/cbprintf_packaged.c:886:6:is_ptr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/cbprintf_packaged.c:913:5:cbprintf_package_convert	192	dynamic,bounded

@@ -1,0 +1,13 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/include/ksched.h:170:20:unpend_thread_no_timeout	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/msg_q.c:150:19:put_msg_in_queue	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/msg_q.c:43:6:k_msgq_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/msg_q.c:73:5:z_impl_k_msgq_alloc_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/msg_q.c:132:5:k_msgq_cleanup	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/msg_q.c:141:5:z_msgq_cleanup_sched_locked	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/msg_q.c:251:5:z_impl_k_msgq_put	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/msg_q.c:256:5:z_impl_k_msgq_put_front	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/msg_q.c:282:6:z_impl_k_msgq_get_attrs	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/msg_q.c:300:5:z_impl_k_msgq_get	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/msg_q.c:383:5:z_impl_k_msgq_peek	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/msg_q.c:417:5:z_impl_k_msgq_peek_at	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/msg_q.c:463:6:z_impl_k_msgq_purge	32	static

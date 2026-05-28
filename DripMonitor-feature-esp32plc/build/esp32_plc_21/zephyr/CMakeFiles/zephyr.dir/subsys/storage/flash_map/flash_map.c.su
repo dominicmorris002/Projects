@@ -1,0 +1,13 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map_priv.h:33:20:is_in_flash_area_bounds	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map.c:22:6:flash_area_foreach	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map.c:29:5:flash_area_open	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map.c:51:6:flash_area_close	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map.c:56:5:flash_area_read	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map.c:66:5:flash_area_write	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map.c:76:5:flash_area_erase	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map.c:85:5:flash_area_copy	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map.c:99:5:flash_area_flatten	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map.c:108:10:flash_area_align	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map.c:113:5:flash_area_has_driver	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map.c:122:22:flash_area_get_device	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/storage/flash_map/flash_map.c:134:9:flash_area_erased_val	32	static

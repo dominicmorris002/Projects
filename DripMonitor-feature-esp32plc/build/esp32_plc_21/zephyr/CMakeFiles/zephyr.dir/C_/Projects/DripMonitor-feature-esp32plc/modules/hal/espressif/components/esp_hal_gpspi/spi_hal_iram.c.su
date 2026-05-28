@@ -1,0 +1,12 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal_iram.c:19:6:spi_hal_setup_device	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal_iram.c:72:6:spi_hal_cal_timing	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal_iram.c:108:5:spi_hal_get_freq_limit	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal_iram.c:42:11:spi_hal_cal_clock_conf	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal_iram.c:126:6:spi_hal_setup_trans	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal_iram.c:206:6:spi_hal_enable_data_line	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal_iram.c:212:6:spi_hal_hw_prepare_rx	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal_iram.c:219:6:spi_hal_hw_prepare_tx	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal_iram.c:226:6:spi_hal_user_start	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal_iram.c:232:6:spi_hal_usr_is_done	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal_iram.c:249:6:spi_hal_push_tx_buffer	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal_iram.c:257:6:spi_hal_fetch_result	48	static

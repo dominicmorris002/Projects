@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/rtc/rtc_ds3231.c:59:12:rtc_ds3231_modify_register.isra	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/rtc/rtc_ds3231.c:803:12:rtc_ds3231_init$part$0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/rtc/rtc_ds3231.c:803:12:rtc_ds3231_init	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/rtc/rtc_ds3231.c:279:12:rtc_ds3231_set_time	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/rtc/rtc_ds3231.c:336:12:rtc_ds3231_get_time	48	static

@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/irq_manage.c:34:6:z_irq_priority_set	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/irq_manage.c:46:5:z_arch_irq_connect_dynamic	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/irq_manage.c:67:6:z_irq_spurious	64	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/irq_manage.c:102:5:xtensa_irq_is_enabled	32	static

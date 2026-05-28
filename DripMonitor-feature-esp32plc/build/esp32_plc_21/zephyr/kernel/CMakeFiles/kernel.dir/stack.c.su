@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/stack.c:27:6:k_stack_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/stack.c:44:9:z_impl_k_stack_alloc_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/stack.c:101:5:k_stack_cleanup	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/stack.c:110:5:z_stack_cleanup_sched_locked	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/stack.c:119:5:z_impl_k_stack_push	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/stack.c:166:5:z_impl_k_stack_pop	32	static

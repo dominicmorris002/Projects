@@ -1,0 +1,16 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_common.inc:37:6:spi_flash_hal_poll_cmd_done	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_common.inc:44:11:spi_flash_hal_device_config	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_common.inc:80:11:spi_flash_hal_configure_host_io_mode	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_common.inc:177:11:spi_flash_hal_common_command	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_common.inc:217:11:spi_flash_hal_read	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_iram.c:27:6:spi_flash_hal_erase_chip	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_iram.c:41:6:spi_flash_hal_erase_sector	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_iram.c:58:6:spi_flash_hal_erase_block	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_iram.c:74:6:spi_flash_hal_program_page	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_iram.c:83:11:spi_flash_hal_set_write_protect	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_iram.c:91:11:spi_flash_hal_enter_dpd_mode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_iram.c:99:11:spi_flash_hal_exit_dpd_mode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_iram.c:122:10:spi_flash_hal_check_status	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_iram.c:143:11:spi_flash_hal_setup_read_suspend	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_iram.c:214:6:spi_flash_hal_resume	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_mspi/spi_flash_hal_iram.c:224:6:spi_flash_hal_suspend	32	static

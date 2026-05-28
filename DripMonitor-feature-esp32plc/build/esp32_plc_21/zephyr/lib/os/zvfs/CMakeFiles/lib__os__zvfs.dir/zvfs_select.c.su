@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_select.c:27:6:ZVFS_FD_ZERO	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_select.c:36:5:ZVFS_FD_ISSET	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_select.c:49:6:ZVFS_FD_CLR	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_select.c:62:6:ZVFS_FD_SET	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_select.c:75:5:z_impl_zvfs_select	96	static

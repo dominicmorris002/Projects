@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_system/port/soc/esp32/reset_reason.c:67:20:esp_reset_reason	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_system/port/soc/esp32/reset_reason.c:89:6:esp_reset_reason_set_hint	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_system/port/soc/esp32/reset_reason.c:97:20:esp_reset_reason_get_hint	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_system/port/soc/esp32/reset_reason.c:58:6:esp_reset_reason_init	32	static

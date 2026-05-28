@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c:53:18:delay_us	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c:37:28:end	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c:20:28:start	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c:61:7:get_temp_buffer_not_supported	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c:77:11:esp_flash_app_disable_os_functions	32	static

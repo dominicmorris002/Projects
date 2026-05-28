@@ -1,0 +1,11 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/cache_utils.c:47:6:spi_flash_init_lock	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/cache_utils.c:51:6:spi_flash_op_lock	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/cache_utils.c:56:6:spi_flash_op_unlock	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/cache_utils.c:62:16:spi_flash_disable_interrupts_caches_and_other_cpu	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/cache_utils.c:69:16:spi_flash_enable_interrupts_caches_and_other_cpu	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/cache_utils.c:76:16:spi_flash_disable_interrupts_caches_and_other_cpu_no_os	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/cache_utils.c:82:16:spi_flash_enable_interrupts_caches_no_os	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/cache_utils.c:89:16:spi_flash_enable_cache	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/cache_utils.c:101:16:spi_flash_disable_cache	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/cache_utils.c:110:16:spi_flash_restore_cache	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/cache_utils.c:118:16:spi_flash_cache_enabled	32	static

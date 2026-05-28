@@ -1,0 +1,62 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc'
+    source-dir: 'C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc'
+  board:
+    name: 'esp32_plc_21'
+    path:
+     - 'C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/industrialshields/esp32_plc_21'
+    qualifiers: 'esp32/procpu'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/bindings'
+    files:
+     - 'C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/industrialshields/esp32_plc_21/esp32_plc_21_esp32_procpu.dts'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/esp32_plc_21_esp32_procpu.overlay'
+    include-dirs:
+     - 'C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/include'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/modules/hal/ambiq/dts'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/modules/hal/atmel/include'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/modules/hal/bouffalolab/include'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/modules/hal/bouffalolab/include/zephyr'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/modules/hal/gigadevice/include'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/modules/hal/microchip/include'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/modules/hal/microchip/dts'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/modules/hal/nuvoton/dts'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/modules/hal/nxp/dts'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/modules/hal/stm32/dts'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/modules/hal/ti/dts'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/include'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/common'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/vendor'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/rx'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/x86'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/xtensa'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/sparc'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/riscv'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/posix'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/arm64'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/arm'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/arc'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts'
+    user-files:
+     - 'C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/esp32_plc_21_esp32_procpu.overlay'
+  kconfig:
+    files:
+     - 'C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/industrialshields/esp32_plc_21/esp32_plc_21_esp32_procpu_defconfig'
+     - 'C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/prj.conf'
+    user-files:
+     - 'C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/Owner/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.0'
+    zephyr-base: 'C:/Projects/DripMonitor-feature-esp32plc/zephyr'
+version: '0.1.0'
+west:
+  command: 'C:\Projects\DripMonitor-feature-esp32plc\.venv\Scripts\west build -b esp32_plc_21/esp32/procpu -d ..\build\esp32_plc_21'
+  topdir: 'C:\Projects\DripMonitor-feature-esp32plc'
+  version: '1.5.0'

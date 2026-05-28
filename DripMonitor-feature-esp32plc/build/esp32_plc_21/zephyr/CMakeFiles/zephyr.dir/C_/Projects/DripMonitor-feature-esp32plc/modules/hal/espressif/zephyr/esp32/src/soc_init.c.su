@@ -1,0 +1,7 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_init.c:17:6:soc_hw_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_init.c:24:6:wdt_reset_info_dump	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_init.c:59:6:wdt_reset_cpu0_info_enable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_init.c:66:6:check_wdt_reset	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_init.c:85:6:reset_mmu	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_init.c:126:6:ana_clock_glitch_reset_config	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_init.c:139:6:bootloader_clock_configure	32	static

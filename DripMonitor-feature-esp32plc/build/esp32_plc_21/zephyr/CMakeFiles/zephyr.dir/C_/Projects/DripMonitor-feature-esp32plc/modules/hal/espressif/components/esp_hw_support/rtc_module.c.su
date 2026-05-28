@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/rtc_module.c:65:23:rtc_isr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/rtc_module.c:102:11:rtc_isr_register	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/rtc_module.c:133:11:rtc_isr_deregister	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/rtc_module.c:185:16:rtc_isr_noniram_disable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/rtc_module.c:195:16:rtc_isr_noniram_enable	32	static

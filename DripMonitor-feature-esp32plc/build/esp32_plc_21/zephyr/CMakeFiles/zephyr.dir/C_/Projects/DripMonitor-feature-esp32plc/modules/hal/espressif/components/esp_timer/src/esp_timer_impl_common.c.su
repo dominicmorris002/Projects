@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_common.c:24:6:esp_timer_impl_lock	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_common.c:29:6:esp_timer_impl_unlock	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_common.c:37:26:esp_timer_impl_set_alarm	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_common.c:71:30:esp_timer_impl_get_min_period_us	32	static

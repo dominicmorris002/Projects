@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal.c:13:6:spi_hal_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal.c:30:6:spi_hal_set_data_pin_idle_level	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal.c:39:6:spi_hal_deinit	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpspi/spi_hal.c:68:5:spi_hal_master_cal_clock	48	static

@@ -1,0 +1,2 @@
+# Load Zephyr board Kconfig descriptions.
+osource "C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/industrialshields/esp32_plc_21/Kconfig"

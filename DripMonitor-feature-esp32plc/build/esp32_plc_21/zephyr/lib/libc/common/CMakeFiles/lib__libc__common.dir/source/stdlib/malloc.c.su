@@ -1,0 +1,10 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/libc/common/source/stdlib/malloc.c:193:12:malloc_prepare	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/libc/common/source/stdlib/malloc.c:123:1:malloc_lock	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/libc/common/source/stdlib/malloc.c:131:1:malloc_unlock	32	static
+C:/Users/Owner/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32_zephyr-elf/xtensa-espressif_esp32_zephyr-elf/sys-include/stdlib.h:183:7:malloc	32	static
+C:/Users/Owner/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32_zephyr-elf/xtensa-espressif_esp32_zephyr-elf/sys-include/stdlib.h:110:9:aligned_alloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/libc/common/source/stdlib/malloc.c:187:7:memalign	32	static
+C:/Users/Owner/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32_zephyr-elf/xtensa-espressif_esp32_zephyr-elf/sys-include/stdlib.h:243:7:realloc	32	static
+C:/Users/Owner/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32_zephyr-elf/xtensa-espressif_esp32_zephyr-elf/sys-include/stdlib.h:147:6:free	32	static
+C:/Users/Owner/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32_zephyr-elf/xtensa-espressif_esp32_zephyr-elf/sys-include/stdlib.h:136:7:calloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/libc/common/source/stdlib/malloc.c:329:7:reallocarray	32	static

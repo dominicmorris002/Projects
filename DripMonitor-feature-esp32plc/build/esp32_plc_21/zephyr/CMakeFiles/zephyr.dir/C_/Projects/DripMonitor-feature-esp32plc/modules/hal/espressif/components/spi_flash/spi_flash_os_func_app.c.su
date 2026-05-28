@@ -1,0 +1,15 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:243:18:main_flash_region_protected	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:208:14:get_buffer_malloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:175:18:spi_flash_os_check_yield	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:221:13:release_buffer_malloc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:202:18:delay_us	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:106:18:spi23_end	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:98:18:spi23_start	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:147:28:spi1_end	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:113:28:spi1_start	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:191:18:spi_flash_os_yield	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:301:11:esp_flash_init_os_functions	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:337:11:esp_flash_deinit_os_functions	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:349:11:esp_flash_init_main_bus_lock	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:368:11:esp_flash_app_enable_os_functions	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c:383:11:esp_flash_set_dangerous_write_protection	32	static

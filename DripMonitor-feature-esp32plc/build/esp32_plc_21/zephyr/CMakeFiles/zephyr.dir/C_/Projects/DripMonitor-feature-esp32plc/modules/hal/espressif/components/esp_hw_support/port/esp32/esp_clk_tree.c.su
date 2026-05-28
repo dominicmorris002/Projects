@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_clk_tree.c:18:11:esp_clk_tree_src_get_freq_hz	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_clk_tree.c:73:6:esp_clk_tree_initialize	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_clk_tree.c:77:6:esp_clk_tree_is_power_on	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_clk_tree.c:83:6:esp_clk_tree_enable_power	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_clk_tree.c:89:11:esp_clk_tree_enable_src	32	static

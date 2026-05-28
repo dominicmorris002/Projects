@@ -1,0 +1,1 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/patches/esp_rom_serial_output.c:20:16:esp_rom_output_tx_wait_idle	48	static

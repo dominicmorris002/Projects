@@ -1,0 +1,15 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/net/net_mgmt.h:322:20:net_mgmt_event_notify	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/net/net_if.h:895:20:net_if_flag_is_set	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/conn_mgr_monitor.c:407:12:conn_mgr_mon_init	64	static
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/kernel.h:1081:19:k_mutex_lock.constprop.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/kernel.h:1098:19:k_mutex_unlock.constprop.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/conn_mgr_monitor.c:257:13:conn_mgr_mon_init_cb	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/conn_mgr_monitor.c:264:13:conn_mgr_mon_thread_fn	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/conn_mgr_monitor.c:54:11:conn_mgr_if_state_internal	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/conn_mgr_monitor.c:291:6:conn_mgr_mon_resend_status	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/conn_mgr_monitor.c:316:6:conn_mgr_ignore_iface	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/conn_mgr_monitor.c:331:6:conn_mgr_watch_iface	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/conn_mgr_monitor.c:346:6:conn_mgr_is_iface_ignored	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/conn_mgr_monitor.c:375:6:conn_mgr_ignore_l2	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/conn_mgr_monitor.c:391:6:conn_mgr_watch_l2	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/conn_mgr_monitor.c:418:10:conn_mgr_if_state	32	static

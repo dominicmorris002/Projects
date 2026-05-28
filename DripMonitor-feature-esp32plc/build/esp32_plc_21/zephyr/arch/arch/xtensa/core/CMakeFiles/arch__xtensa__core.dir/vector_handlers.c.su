@@ -1,0 +1,15 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:442:22:xtensa_handle_irq_lvl	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:279:21:return_to	32	static
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/log_msg.h:107:20:z_log_msg_static_create.constprop	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:141:6:xtensa_dump_stack$part$0	352	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:37:6:xtensa_is_outside_stack_bounds	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:108:6:xtensa_is_frame_pointer_valid	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:141:6:xtensa_dump_stack	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:342:6:arch_ipi_lazy_coprocessors_save	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:508:1:xtensa_int2_c	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:512:1:xtensa_int3_c	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:516:1:xtensa_int4_c	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:520:1:xtensa_int5_c	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:524:1:xtensa_int6_c	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:528:1:xtensa_int7_c	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/vector_handlers.c:538:7:xtensa_excint1_c	288	dynamic,bounded

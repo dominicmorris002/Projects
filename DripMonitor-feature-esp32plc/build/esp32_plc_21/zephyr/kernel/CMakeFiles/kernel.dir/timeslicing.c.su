@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/timeslicing.c:39:12:z_time_slice_size	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/timeslicing.c:61:13:slice_timeout	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/timeslicing.c:75:6:z_reset_time_slice	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/timeslicing.c:97:6:k_sched_time_slice_set	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/timeslicing.c:131:6:z_time_slice	32	static

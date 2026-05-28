@@ -1,0 +1,10 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/mmu_hal.c:24:6:mmu_hal_ctx_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/mmu_hal.c:40:6:mmu_hal_unmap_all	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/mmu_hal.c:29:6:mmu_hal_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/mmu_hal.c:52:10:mmu_hal_pages_to_bytes	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/mmu_hal.c:72:10:mmu_hal_bytes_to_pages	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/mmu_hal.c:150:6:mmu_hal_paddr_to_vaddr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/mmu_hal.c:171:6:mmu_hal_check_valid_ext_vaddr_region	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/mmu_hal.c:92:6:mmu_hal_map_region	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/mmu_hal.c:116:6:mmu_hal_unmap_region	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/mmu_hal.c:132:6:mmu_hal_vaddr_to_paddr	32	static

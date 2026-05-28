@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/log_msg.h:26:20:z_log_msg_simple_create_0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_server.c:81:13:mbs_exception_rsp	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_server.c:34:6:modbus_reset_stats	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_server.c:960:6:modbus_server_handler	64	static

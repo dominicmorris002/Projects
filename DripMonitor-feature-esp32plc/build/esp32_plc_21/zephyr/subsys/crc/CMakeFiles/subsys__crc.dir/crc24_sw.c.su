@@ -1,0 +1,3 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/crc/crc24_sw.c:18:17:crc24_pgp_update	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/crc/crc24_sw.c:12:17:crc24_pgp	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/crc/crc24_sw.c:83:10:crc24q_rtcm3	32	static

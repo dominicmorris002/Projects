@@ -1,0 +1,3 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/common/init.c:27:13:arch_early_memset	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/common/init.c:40:13:arch_early_memcpy	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/common/init.c:51:6:arch_bss_zero	32	static

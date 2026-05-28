@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sockets/getaddrinfo.c:58:13:dns_resolve_cb	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sockets/getaddrinfo.c:221:5:z_impl_z_zsock_getaddrinfo_internal	112	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sockets/getaddrinfo.c:434:5:zsock_getaddrinfo	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sockets/getaddrinfo.c:474:6:zsock_freeaddrinfo	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sockets/getaddrinfo.c:485:13:zsock_gai_strerror	32	static

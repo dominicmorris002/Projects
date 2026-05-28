@@ -1,0 +1,16 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/drivers/gpio.h:1066:19:gpio_pin_configure_dt	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp23xxx.c:40:12:read_port_regs	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp23xxx.c:63:12:write_port_regs	32	static
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/kernel.h:1215:20:k_sem_give	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp23xxx.c:466:13:mcp23xxx_int_gpio_handler	32	static
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/kernel.h:1198:19:k_sem_take.constprop.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp23xxx.c:390:12:mcp23xxx_manage_callback	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp23xxx.c:294:12:mcp23xxx_pin_interrupt_configure	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp23xxx.c:269:12:mcp23xxx_port_toggle_bits	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp23xxx.c:235:12:mcp23xxx_port_set_masked_raw	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp23xxx.c:264:12:mcp23xxx_port_clear_bits_raw	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp23xxx.c:259:12:mcp23xxx_port_set_bits_raw	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp23xxx.c:214:12:mcp23xxx_port_get_raw	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp23xxx.c:413:13:mcp23xxx_work_handler	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp23xxx.c:171:12:mcp23xxx_pin_cfg	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/gpio/gpio_mcp23xxx.c:492:5:gpio_mcp23xxx_init	32	static

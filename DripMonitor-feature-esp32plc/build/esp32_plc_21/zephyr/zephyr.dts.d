@@ -1,0 +1,31 @@
+empty_file.o: \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/misc/empty_file.c \
+ C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/industrialshields/esp32_plc_21/esp32_plc_21_esp32_procpu.dts \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/xtensa/espressif/esp32/esp32_wroom_32ue_n16.dtsi \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/xtensa/espressif/esp32/esp32_common.dtsi \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/common/mem.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/common/freq.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/xtensa/xtensa.dtsi \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/common/skeleton.dtsi \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/dt-bindings/adc/adc.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/dt-bindings/dt-util.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/util_macro.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/util_internal.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/util_loops.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/util_listify.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/util_internal_is_eq.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/util_internal_util_inc.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/util_internal_util_dec.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/util_internal_util_x2.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/dt-bindings/gpio/gpio.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/dt-bindings/clock/esp32_clock.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/dt-bindings/interrupt-controller/esp-xtensa-intmux.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/dt-bindings/pinctrl/esp32-pinctrl.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
+ C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/industrialshields/esp32_plc_21/esp32_plc_21-pinctrl.dtsi \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/dt-bindings/pinctrl/esp-pinctrl-common.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/dt-bindings/pinctrl/esp32-pinctrl.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/dt-bindings/pinctrl/esp32-gpio-sigmap.h \
+ C:/Projects/DripMonitor-feature-esp32plc/zephyr/dts/vendor/espressif/partitions_0x1000_default_16M.dtsi \
+ C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/esp32_plc_21_esp32_procpu.overlay

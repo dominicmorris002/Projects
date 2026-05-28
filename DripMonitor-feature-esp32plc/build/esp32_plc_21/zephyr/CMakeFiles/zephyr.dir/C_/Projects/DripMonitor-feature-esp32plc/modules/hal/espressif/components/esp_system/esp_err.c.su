@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_system/esp_err.c:40:6:_esp_error_check_failed_without_abort	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_system/esp_err.c:45:6:_esp_error_check_failed	32	static

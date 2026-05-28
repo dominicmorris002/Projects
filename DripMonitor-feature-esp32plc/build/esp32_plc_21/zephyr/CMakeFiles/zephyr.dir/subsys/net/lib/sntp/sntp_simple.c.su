@@ -1,0 +1,3 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sntp/sntp_simple.c:12:12:sntp_simple_helper	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sntp/sntp_simple.c:74:5:sntp_simple_addr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sntp/sntp_simple.c:87:5:sntp_simple	48	static

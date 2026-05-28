@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c:160:37:cs_initialize	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c:440:11:spi_bus_remove_flash_device	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c:365:11:spi_bus_add_flash_device	112	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c:494:11:esp_flash_init_default_chip	96	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c:611:11:esp_flash_app_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c:669:6:esp_flash_spi_init_include_func	32	static

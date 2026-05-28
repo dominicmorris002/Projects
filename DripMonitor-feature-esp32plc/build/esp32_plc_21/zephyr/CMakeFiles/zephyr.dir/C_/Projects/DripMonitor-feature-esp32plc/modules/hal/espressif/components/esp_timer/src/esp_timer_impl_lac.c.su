@@ -1,0 +1,10 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_lac.c:161:33:timer_alarm_isr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_lac.c:93:30:esp_timer_impl_get_counter_reg	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_lac.c:124:29:esp_timer_impl_get_time	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_lac.c:131:26:esp_timer_impl_set_alarm_id	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_lac.c:207:6:esp_timer_impl_set	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_lac.c:217:6:esp_timer_impl_advance	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_lac.c:223:11:esp_timer_impl_early_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_lac.c:247:11:esp_timer_impl_init	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_lac.c:292:6:esp_timer_impl_deinit	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_lac.c:312:10:esp_timer_impl_get_alarm_reg	32	static

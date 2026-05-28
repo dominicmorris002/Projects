@@ -1,0 +1,9 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_flash_init.c:59:10:get_chip_ver_pkg	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_flash_init.c:64:6:flash_update_id	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_flash_init.c:69:6:flash_update_size	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_flash_init.c:74:6:flash_cs_timing_config	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_flash_init.c:84:6:flash_clock_config	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_flash_init.c:108:6:flash_gpio_config	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_flash_init.c:167:6:flash_dummy_config	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_flash_init.c:215:5:flash_get_wp_pin	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/esp32/src/soc_flash_init.c:362:11:init_spi_flash	48	static

@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c:39:6:periph_rtc_dig_clk8m_enable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c:58:10:periph_rtc_dig_clk8m_get_freq	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c:68:6:periph_rtc_dig_clk8m_disable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c:81:6:periph_rtc_apll_acquire	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c:92:6:periph_rtc_apll_release	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c:105:11:periph_rtc_apll_freq_set	48	static

@@ -1,0 +1,32 @@
+# Available runners configured by board.cmake.
+runners:
+- esp32
+
+# Default flash runner if --runner is not given.
+flash-runner: esp32
+
+# Default debug runner if --runner is not given.
+debug-runner: openocd
+
+# Common runner configuration values.
+config:
+  board_dir: C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/boards/industrialshields/esp32_plc_21
+  # Build outputs:
+  elf_file: zephyr.elf
+  bin_file: zephyr.bin
+  # Host tools:
+  gdb: C:/Users/Owner/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gdb.exe
+  openocd: C:/Users/Owner/zephyr-sdk-1.0.1/hosttools/openocd/bin/openocd.exe
+  openocd_search:
+    - C:/Users/Owner/zephyr-sdk-1.0.1/hosttools/openocd/share/openocd/scripts
+
+# Runner specific arguments
+args:
+  esp32:
+    - --esp-monitor-baud=115200
+    - --esp-idf-path=C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif
+    - --esp-app-address=0x1000
+    - --esp-flash-size=16MB
+    - --esp-flash-freq=40m
+    - --esp-flash-mode=dio
+    - --esp-idf-path=C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif

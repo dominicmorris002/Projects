@@ -1,0 +1,4 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/xtensa_backtrace.c:24:24:xtensa_cpu_process_stack_pc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/xtensa_backtrace.c:42:20:xtensa_stack_ptr_is_sane	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/xtensa_backtrace.c:80:6:xtensa_backtrace_get_next_frame	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/xtensa_backtrace.c:111:5:xtensa_backtrace_print	48	static

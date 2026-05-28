@@ -1,0 +1,17 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:126:25:s_get_bus_mask	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:379:37:s_stop_cache	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:389:37:s_start_cache	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:637:37:s_do_unmapping	32	static
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/kernel.h:1098:19:k_mutex_unlock.constprop.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:399:37:s_do_cache_invalidate.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:440:37:s_do_mapping	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:195:6:esp_mmu_map_init	160	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:278:11:esp_mmu_map_get_max_consecutive_free_block_size	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:313:11:esp_mmu_map_reserve_block_with_caps	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:343:21:esp_mmu_paddr_find_caps	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:464:11:esp_mmu_map	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:650:11:esp_mmu_unmap	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:708:11:esp_mmu_map_dump_mapped_blocks	160	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:755:21:esp_mmu_map_dump_mapped_blocks_private	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:803:11:esp_mmu_vaddr_to_paddr	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/esp_mmu_map.c:835:11:esp_mmu_paddr_to_vaddr	48	static

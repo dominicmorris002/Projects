@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_clk_init.c:140:24:rtc_clk_xtal_freq_estimate	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_clk_init.c:31:6:rtc_clk_init	80	static

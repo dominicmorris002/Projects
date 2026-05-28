@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sockets/sockets_service.c:39:6:net_socket_service_foreach	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sockets/sockets_service.c:54:5:z_impl_net_socket_service_register	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sockets/sockets_service.c:123:6:net_socket_service_callback	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sockets/sockets_service.c:169:13:socket_service_thread	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sockets/sockets_service.c:304:6:socket_service_init	64	static

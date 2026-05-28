@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/net/net_if.h:895:20:net_if_flag_is_set	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_core.c:697:12:net_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_core.c:520:13:net_queue_rx.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_core.c:511:6:net_process_rx_packet	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_core.c:549:5:net_recv_data	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_core.c:371:5:net_try_send_data	32	static

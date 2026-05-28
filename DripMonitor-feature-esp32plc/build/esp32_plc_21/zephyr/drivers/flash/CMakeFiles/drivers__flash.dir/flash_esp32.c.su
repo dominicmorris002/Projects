@@ -1,0 +1,9 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/flash/flash_esp32.c:695:6:flash_esp32_page_layout	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/flash/flash_esp32.c:704:39:flash_esp32_get_parameters	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/flash/flash_esp32.c:367:12:flash_esp32_read$part$0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/flash/flash_esp32.c:711:12:flash_esp32_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/flash/flash_esp32.c:116:20:flash_esp32_sem_take.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/flash/flash_esp32.c:482:12:flash_esp32_erase	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/flash/flash_esp32.c:436:12:flash_esp32_write$part$0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/flash/flash_esp32.c:436:12:flash_esp32_write	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/flash/flash_esp32.c:367:12:flash_esp32_read	32	static

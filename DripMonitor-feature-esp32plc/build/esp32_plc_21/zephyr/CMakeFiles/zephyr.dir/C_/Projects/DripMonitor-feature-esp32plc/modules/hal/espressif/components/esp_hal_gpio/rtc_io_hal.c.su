@@ -1,0 +1,9 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpio/esp32/include/hal/rtc_io_ll.h:110:20:rtcio_ll_input_enable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpio/esp32/include/hal/rtc_io_ll.h:120:20:rtcio_ll_input_disable	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpio/esp32/include/hal/rtc_io_ll.h:338:20:rtcio_ll_enable_output_in_sleep	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpio/esp32/include/hal/rtc_io_ll.h:350:20:rtcio_ll_disable_output_in_sleep	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpio/esp32/include/hal/rtc_io_ll.h:372:20:rtcio_ll_disable_input_in_sleep	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpio/esp32/include/hal/rtc_io_ll.h:382:20:rtcio_ll_enable_sleep_setting	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpio/rtc_io_hal.c:14:6:rtcio_hal_set_direction	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpio/rtc_io_hal.c:52:6:rtcio_hal_set_direction_in_sleep	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_gpio/rtc_io_hal.c:80:6:rtcio_hal_isolate	32	static

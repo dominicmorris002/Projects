@@ -1,0 +1,11 @@
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/kernel.h:1098:19:k_mutex_unlock.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_mgmt.c:114:13:mgmt_event_work_handler	96	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/slist.h:448:1:sys_slist_find_and_remove.constprop.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_mgmt.c:158:20:mgmt_rebuild_global_event_mask	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_mgmt.c:342:6:net_mgmt_add_event_callback	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_mgmt.c:358:6:net_mgmt_del_event_callback	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_mgmt.c:286:12:mgmt_event_wait_call	96	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_mgmt.c:371:6:net_mgmt_event_notify_with_info	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_mgmt.c:385:5:net_mgmt_event_wait	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_mgmt.c:397:5:net_mgmt_event_wait_on_iface	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/net_mgmt.c:412:6:net_mgmt_event_init	48	static

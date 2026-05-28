@@ -1,0 +1,15 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:26:11:spi_flash_chip_mxic_opi_probe	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:42:11:spi_flash_chip_mxic_opi_detect_size	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:57:18:spi_flash_chip_mxic_opi_get_caps	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:66:11:spi_flash_chip_mxic_opi_set_write_protect	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:169:11:spi_flash_chip_mxic_opi_erase_chip	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:200:11:spi_flash_chip_mxic_opi_erase_sector	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:229:11:spi_flash_chip_mxic_opi_erase_block	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:353:11:spi_flash_chip_xmic_opi_set_io_mode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:363:11:spi_flash_chip_xmic_opi_config_host_io_mode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:98:11:spi_flash_chip_mxic_opi_read_id	80	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:155:11:spi_flash_chip_mxic_opi_get_write_protect	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:285:11:spi_flash_chip_mxic_opi_write	128	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:258:11:spi_flash_chip_mxic_opi_page_program	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:313:11:spi_flash_chip_mxic_opi_get_io_mode	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c:133:11:spi_flash_chip_mxic_opi_read_reg	64	static

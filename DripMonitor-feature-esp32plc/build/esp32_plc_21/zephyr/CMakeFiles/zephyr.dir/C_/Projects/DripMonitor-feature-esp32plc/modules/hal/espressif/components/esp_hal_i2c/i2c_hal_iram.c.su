@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_i2c/i2c_hal_iram.c:14:6:i2c_hal_master_handle_tx_event	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_i2c/i2c_hal_iram.c:31:6:i2c_hal_master_handle_rx_event	48	static

@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/utils/getopt/getopt.c:43:6:sys_getopt_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/utils/getopt/getopt.c:73:5:sys_getopt	48	static

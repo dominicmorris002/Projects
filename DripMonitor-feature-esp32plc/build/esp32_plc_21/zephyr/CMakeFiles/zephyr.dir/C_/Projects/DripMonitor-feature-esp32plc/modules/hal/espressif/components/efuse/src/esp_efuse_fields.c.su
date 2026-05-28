@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/esp_efuse_fields.c:40:6:esp_efuse_reset	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/esp_efuse_fields.c:45:10:esp_efuse_read_secure_version	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/esp_efuse_fields.c:54:6:esp_efuse_check_secure_version	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/esp_efuse_fields.c:69:11:esp_efuse_update_secure_version	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/src/esp_efuse_fields.c:192:16:esp_efuse_is_flash_encryption_enabled	32	static

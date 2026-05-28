@@ -1,0 +1,14 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/drivers/clock_control.h:173:19:clock_control_on.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/drivers/gpio.h:1719:19:gpio_pin_set_dt.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/drivers/gpio.h:1066:19:gpio_pin_configure_dt.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/i2c/i2c_esp32.c:100:17:i2c_get_src_clk_freq$part$0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/i2c/i2c_esp32.c:213:23:i2c_hw_fsm_reset	112	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/i2c/i2c_esp32.c:374:22:i2c_esp32_transmit	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/i2c/i2c_esp32.c:425:22:i2c_esp32_write_addr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/i2c/i2c_esp32.c:351:12:i2c_esp32_get_config$part$0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/i2c/i2c_esp32.c:351:12:i2c_esp32_get_config	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/i2c/i2c_esp32.c:696:23:i2c_esp32_isr	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/i2c/i2c_esp32.c:315:12:i2c_esp32_configure	80	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/i2c/i2c_esp32.c:731:22:i2c_esp32_init	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/i2c/i2c_esp32.c:609:22:i2c_esp32_transfer	80	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/i2c/i2c_esp32.c:256:12:i2c_esp32_recover	32	static

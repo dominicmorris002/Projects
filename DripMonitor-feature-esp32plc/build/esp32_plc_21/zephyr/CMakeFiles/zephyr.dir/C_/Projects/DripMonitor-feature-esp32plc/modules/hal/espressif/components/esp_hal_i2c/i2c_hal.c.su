@@ -1,0 +1,10 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_i2c/i2c_hal.c:14:6:i2c_hal_slave_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_i2c/i2c_hal.c:27:6:_i2c_hal_set_bus_timing	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_i2c/i2c_hal.c:34:6:i2c_hal_master_fsm_rst	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_i2c/i2c_hal.c:39:6:i2c_hal_master_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_i2c/i2c_hal.c:52:6:_i2c_hal_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_i2c/i2c_hal.c:60:6:_i2c_hal_deinit	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_i2c/i2c_hal.c:66:6:i2c_hal_master_set_scl_timeout_val	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_i2c/i2c_hal.c:74:6:i2c_hal_get_timing_config	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_i2c/i2c_hal.c:85:6:i2c_hal_set_timing_config	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_hal_i2c/i2c_hal.c:98:6:i2c_hal_master_trans_start	32	static

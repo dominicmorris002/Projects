@@ -1,0 +1,10 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sntp/sntp.c:63:16:parse_response.constprop	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sntp/sntp.c:204:12:sntp_query_send	96	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sntp/sntp.c:174:5:sntp_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sntp/sntp.c:245:5:sntp_recv_response	80	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sntp/sntp.c:228:5:sntp_query	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sntp/sntp.c:277:6:sntp_close	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sntp/sntp.c:286:5:sntp_init_async	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sntp/sntp.c:310:5:sntp_send_async	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sntp/sntp.c:326:5:sntp_read_async	80	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/sntp/sntp.c:344:6:sntp_close_async	32	static

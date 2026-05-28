@@ -1,0 +1,11 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c:174:20:bootloader_read_status_8b_rdsr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c:179:20:bootloader_read_status_8b_rdsr2	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c:189:20:bootloader_read_status_16b_rdsr_rdsr2	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c:194:16:bootloader_write_status_8b_wrsr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c:199:16:bootloader_write_status_8b_wrsr2	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c:209:16:bootloader_write_status_16b_wrsr	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c:214:20:bootloader_read_status_8b_xmc25qu64a	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c:223:16:bootloader_write_status_8b_xmc25qu64a	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c:71:6:bootloader_enable_qio_mode	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c:184:20:bootloader_read_status_8b_rdsr3	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c:204:16:bootloader_write_status_8b_wrsr3	32	static

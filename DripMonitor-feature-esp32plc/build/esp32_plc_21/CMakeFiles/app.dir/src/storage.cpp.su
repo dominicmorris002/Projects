@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/src/storage.cpp:102:5:int _Z12storageWrite5fs_idPKvj$part$0(fs_id, const void*, size_t)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/src/storage.cpp:88:5:int storageRead(fs_id, void*, size_t)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/src/storage.cpp:28:5:int storageInit(bool)	80	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/src/storage.cpp:88:5:int storageRead(fs_id, void*, size_t)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/src/storage.cpp:102:5:int storageWrite(fs_id, const void*, size_t)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/src/storage.cpp:73:5:int storageInitVar(fs_id, void*, size_t)	32	static

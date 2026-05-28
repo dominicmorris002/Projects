@@ -1,0 +1,3 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/fdtable.h:229:19:zvfs_fdtable_call_ioctl	80	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_poll.c:20:5:zvfs_poll_internal	160	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/os/zvfs/zvfs_poll.c:172:5:z_impl_zvfs_poll	32	static

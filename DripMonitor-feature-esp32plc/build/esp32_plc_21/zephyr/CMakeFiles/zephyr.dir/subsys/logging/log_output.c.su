@@ -1,0 +1,11 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/logging/log_output.h:205:20:log_output_write	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/logging/log_output.h:220:20:log_output_flush	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_output.c:129:12:print_formatted	80	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_output.c:349:13:newline_print	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_output.c:93:12:out_func	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_output.c:119:12:cr_out_func	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_output.c:656:6:log_output_process	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_output.c:703:6:log_output_msg_process	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_output.c:723:6:log_output_dropped_process	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_output.c:740:6:log_output_timestamp_freq_set	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/logging/log_output.c:754:10:log_output_timestamp_to_us	32	static

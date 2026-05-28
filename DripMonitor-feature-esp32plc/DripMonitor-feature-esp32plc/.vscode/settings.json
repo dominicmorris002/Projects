@@ -1,0 +1,36 @@
+{
+        // Hush CMake
+		"cmake.configureOnOpen": false,
+
+		// IntelliSense - point at the ESP32 Zephyr SDK toolchain and the
+		// generated compile_commands.json from the esp32_plc_21 build dir.
+		"C_Cpp.default.compilerPath": "${userHome}/zephyr-sdk-0.16.5-1/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc",
+		"C_Cpp.default.compileCommands": "${workspaceFolder}/build/esp32_plc_21/compile_commands.json",
+
+		// File Associations
+		"files.associations": {
+			"socketutils.h": "c",
+			"array": "c",
+			"compare": "c",
+			"functional": "c",
+			"tuple": "c",
+			"type_traits": "c",
+			"utility": "c",
+			"variant": "c",
+			"system_error": "c",
+			"regex": "c",
+			"atomic": "c",
+			"cerrno": "c",
+			"*.tcc": "cpp",
+			"unordered_map": "cpp",
+			"istream": "cpp",
+			"numeric": "cpp",
+			"ostream": "cpp",
+			"sstream": "cpp"
+		},
+		"kconfig.zephyr.board": {
+			"board": "esp32_plc_21",
+			"arch": "xtensa",
+			"dir": "${workspaceFolder}/boards/industrialshields/esp32_plc_21"
+		}
+}

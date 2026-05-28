@@ -1,0 +1,14 @@
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/log_msg.h:26:20:z_log_msg_simple_create_0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_core.c:117:6:modbus_tx_adu$part$0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_core.c:193:31:modbus_init_iface$part$0	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_core.c:193:31:modbus_init_iface	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_core.c:117:6:modbus_tx_adu	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_core.c:68:13:modbus_rx_handler	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_core.c:138:5:modbus_tx_wait_rx_adu	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_core.c:152:24:modbus_get_context	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_core.c:171:5:modbus_iface_get_by_ctx	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_core.c:182:5:modbus_iface_get_by_name	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_core.c:224:5:modbus_init_server	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_core.c:297:5:modbus_register_user_fc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_core.c:319:5:modbus_init_client	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_core.c:376:5:modbus_disable	80	static

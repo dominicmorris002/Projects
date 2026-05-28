@@ -1,0 +1,8 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_ops.c:94:16:spi_flash_guard_set	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_ops.c:99:42:spi_flash_guard_get	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_ops.c:151:16:esp_mspi_pin_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_ops.c:186:21:spi_flash_init_chip_state	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_ops.c:199:16:spi_flash_set_rom_required_regs	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_ops.c:245:9:esp_mspi_get_io	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_ops.c:167:6:esp_mspi_pin_reserve	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/flash_ops.c:315:21:esp_mspi_32bit_address_flash_feature_check	32	static

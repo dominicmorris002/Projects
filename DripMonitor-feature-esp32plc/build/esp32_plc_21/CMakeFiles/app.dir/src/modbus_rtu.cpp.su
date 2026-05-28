@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/cbprintf_internal.h:57:20:void z_cbprintf_wcpy(int*, int*, size_t)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/src/modbus_rtu.cpp:18:12:int holding_reg_rd(uint16_t, uint16_t*)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/src/modbus_rtu.cpp:62:12:int input_reg_rd(uint16_t, uint16_t*)	32	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/src/modbus_rtu.cpp:25:12:int holding_reg_wr(uint16_t, uint16_t)	144	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/src/modbus_rtu.cpp:72:5:int modbus_rtu_init()	96	static
+C:/Projects/DripMonitor-feature-esp32plc/DripMonitor-feature-esp32plc/src/modbus_rtu.cpp:112:6:void modbus_rtu_sync()	32	static

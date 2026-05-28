@@ -1,0 +1,5 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/drivers/i2c.h:875:19:z_impl_i2c_transfer	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/pwm/pwm_pca9685.c:222:12:pca9685_get_cycles_per_sec	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/pwm/pwm_pca9685.c:88:12:set_reg.isra	96	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/pwm/pwm_pca9685.c:238:12:pca9685_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/pwm/pwm_pca9685.c:164:12:pca9685_set_cycles	128	dynamic,bounded

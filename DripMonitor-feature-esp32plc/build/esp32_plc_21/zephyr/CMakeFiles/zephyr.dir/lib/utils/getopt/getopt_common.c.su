@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/utils/getopt/getopt_common.c:50:6:z_getopt_global_state_update	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/utils/getopt/getopt_common.c:64:26:sys_getopt_state_get	32	static

@@ -1,0 +1,1 @@
+"mcuboot":"C:/Projects/DripMonitor-feature-esp32plc/bootloader/mcuboot":"C:/Projects/DripMonitor-feature-esp32plc/bootloader/mcuboot/boot/zephyr/sysbuild"

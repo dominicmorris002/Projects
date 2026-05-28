@@ -1,0 +1,10 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dns_pack.c:24:5:dns_msg_pack_qname	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dns_pack.c:111:5:dns_unpack_answer	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dns_pack.c:194:5:dns_unpack_response_header	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dns_pack.c:273:5:dns_msg_pack_query	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dns_pack.c:320:5:dns_unpack_response_query	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dns_pack.c:370:5:dns_copy_qname	144	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dns_pack.c:445:5:mdns_unpack_query_header	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dns_pack.c:486:5:dns_unpack_name	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dns_pack.c:567:13:dns_qtype_to_str	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/lib/dns/dns_pack.c:591:5:dns_unpack_query	48	static

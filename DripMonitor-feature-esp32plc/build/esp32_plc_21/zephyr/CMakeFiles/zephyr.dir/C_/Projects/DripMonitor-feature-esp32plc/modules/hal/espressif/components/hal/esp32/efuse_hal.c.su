@@ -1,0 +1,8 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/efuse_hal.c:15:20:efuse_hal_get_major_chip_version	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/efuse_hal.c:47:20:efuse_hal_get_minor_chip_version	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/efuse_hal.c:52:10:efuse_hal_get_rated_freq_mhz	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/efuse_hal.c:63:6:efuse_hal_set_timing	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/efuse_hal.c:86:6:efuse_hal_read	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/efuse_hal.c:93:6:efuse_hal_clear_program_registers	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/efuse_hal.c:109:6:efuse_hal_program	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/hal/esp32/efuse_hal.c:122:6:efuse_hal_is_coding_error_in_block	32	static

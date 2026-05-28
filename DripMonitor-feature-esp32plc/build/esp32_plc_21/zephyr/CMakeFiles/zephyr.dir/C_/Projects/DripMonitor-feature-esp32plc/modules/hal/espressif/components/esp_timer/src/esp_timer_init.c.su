@@ -1,0 +1,3 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_init.c:27:1:__esp_system_init_fn_esp_timer_init_nonos	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_init.c:11:11:esp_timer_early_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_timer/src/esp_timer_init.c:32:6:esp_timer_init_include_func	32	static

@@ -1,0 +1,9 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/net/net_ip.h:990:20:net_ipv4_is_addr_mcast_raw	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/net/net_ip.h:1268:20:net_ipv4_is_addr_bcast_raw	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/net/net_ip.h:1325:20:net_ipv4_is_my_addr_raw	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/ipv4.c:37:5:net_ipv4_create_full	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/ipv4.c:91:5:net_ipv4_create	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/ipv4.c:110:5:net_ipv4_finalize	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/ipv4.c:253:18:net_ipv4_input	96	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/ipv4.c:490:18:net_ipv4_prepare_for_send	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/ipv4.c:520:6:net_ipv4_init	32	static

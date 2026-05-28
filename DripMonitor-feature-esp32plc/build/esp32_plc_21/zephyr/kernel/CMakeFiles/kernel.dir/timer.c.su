@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/timer.c:71:6:z_timer_expiration_handler	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/timer.c:154:6:k_timer_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/timer.c:182:6:z_impl_k_timer_start	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/timer.c:244:6:z_impl_k_timer_stop	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/timer.c:295:10:z_impl_k_timer_status_get	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/timer.c:315:10:z_impl_k_timer_status_sync	32	static

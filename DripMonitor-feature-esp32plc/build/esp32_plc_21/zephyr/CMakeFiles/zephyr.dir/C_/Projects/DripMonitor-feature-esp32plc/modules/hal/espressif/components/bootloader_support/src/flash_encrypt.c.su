@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c:84:6:esp_flash_write_protect_crypt_cnt	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c:89:22:esp_get_flash_encryption_mode	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c:34:6:esp_flash_encryption_init_checks	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c:145:6:esp_flash_encryption_set_release_mode	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c:222:6:esp_flash_encryption_cfg_verify_release_mode	48	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c:493:16:esp_flash_encryption_enabled	32	static

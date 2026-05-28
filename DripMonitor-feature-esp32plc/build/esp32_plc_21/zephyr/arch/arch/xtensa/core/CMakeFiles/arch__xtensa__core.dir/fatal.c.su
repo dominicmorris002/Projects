@@ -1,0 +1,3 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/fatal.c:23:7:xtensa_exccause	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/fatal.c:87:6:xtensa_fatal_error	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/xtensa/core/fatal.c:136:20:arch_syscall_oops	32	static

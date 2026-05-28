@@ -1,0 +1,7 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/pipe.c:37:12:wait_for	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/include/ksched.h:264:20:z_sched_wake_all.constprop	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/pipe.c:67:6:z_impl_k_pipe_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/pipe.c:147:5:z_impl_k_pipe_write	96	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/pipe.c:220:5:z_impl_k_pipe_read	96	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/pipe.c:273:6:z_impl_k_pipe_reset	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/pipe.c:287:6:z_impl_k_pipe_close	32	static

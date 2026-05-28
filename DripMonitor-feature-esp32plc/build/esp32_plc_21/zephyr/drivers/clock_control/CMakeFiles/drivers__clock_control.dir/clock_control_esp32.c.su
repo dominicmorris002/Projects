@@ -1,0 +1,8 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/clock_control/clock_control_esp32.c:98:34:clock_control_esp32_get_status	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/clock_control/clock_control_esp32.c:158:12:clock_control_esp32_get_rate	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/clock_control/clock_control_esp32.c:141:12:clock_control_esp32_off	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/clock_control/clock_control_esp32.c:121:12:clock_control_esp32_on	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/clock_control/clock_control_esp32.c:183:12:esp32_select_rtc_slow_clk	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/clock_control/clock_control_esp32.c:367:12:esp32_cpu_clock_configure	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/clock_control/clock_control_esp32.c:494:12:clock_control_esp32_configure	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/clock_control/clock_control_esp32.c:524:12:clock_control_esp32_init	32	static

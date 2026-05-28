@@ -1,0 +1,9 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/utils/ring_buffer.c:12:10:ring_buf_area_claim	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/ring_buffer.h:304:24:ring_buf_put_claim	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/sys/ring_buffer.h:386:24:ring_buf_get_claim	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/utils/ring_buffer.c:31:5:ring_buf_area_finish	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/utils/ring_buffer.c:53:10:ring_buf_put	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/utils/ring_buffer.c:78:10:ring_buf_get	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/utils/ring_buffer.c:105:10:ring_buf_peek	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/utils/ring_buffer.c:144:5:ring_buf_item_put	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/lib/utils/ring_buffer.c:186:5:ring_buf_item_get	48	static

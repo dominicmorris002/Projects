@@ -1,0 +1,552 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Startup",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "startup.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Main"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Main",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "main-bg.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "Y": 396,
+            "Width": 261,
+            "Height": 84,
+            "Pressed": "btn-prime-oiler-active.png",
+            "Released": "btn-prime-oiler.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button2",
+            "X": 270,
+            "Y": 396,
+            "Width": 260,
+            "Height": 84,
+            "Pressed": "btn-run-oiler-active.png",
+            "Released": "btn-run-oiler.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button3",
+            "X": 539,
+            "Y": 396,
+            "Width": 261,
+            "Height": 84,
+            "Pressed": "btn-settings.png",
+            "Released": "btn-settings.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "X": 349,
+            "Y": 154,
+            "Width": 51,
+            "Height": 50,
+            "RelativeFilename": "alarm-bell.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Number_1",
+            "X": 75,
+            "Y": 282,
+            "Width": 150,
+            "Height": 118,
+            "TextId": "__SingleUse_8R3R",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 14,
+              "Green": 161,
+              "Blue": 230
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_5S75",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image3",
+            "X": 349,
+            "Y": 290,
+            "Width": 51,
+            "Height": 51,
+            "RelativeFilename": "signal-status-0.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 374,
+            "Y": 36,
+            "Width": 1896,
+            "Height": 85,
+            "TextId": "__SingleUse_TOTK",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_16EK",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea5",
+            "X": 408,
+            "Y": 154,
+            "Width": 244,
+            "Height": 48,
+            "TextId": "__SingleUse_9A63",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 163,
+              "Green": 163,
+              "Blue": 163
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_0936"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea5_1",
+            "X": 408,
+            "Y": 290,
+            "Width": 278,
+            "Height": 48,
+            "TextId": "__SingleUse_H64R",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_RE9M",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea6",
+            "X": 83,
+            "Y": 77,
+            "Width": 135,
+            "Height": 116,
+            "TextId": "__SingleUse_YIH1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 43,
+              "Green": 147,
+              "Blue": 209
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_2EHL",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionHide"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "PrimeOilerPress"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "RunOilerPress"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button3"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Settings"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Settings",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "SettingsBackround.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton1",
+            "X": 543,
+            "Y": 207,
+            "Width": 251,
+            "Height": 67,
+            "Pressed": "OffButton.png",
+            "Released": "OffButton.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 406,
+            "Y": 396,
+            "Width": 394,
+            "Height": 84,
+            "Pressed": "BackButton.png",
+            "Released": "BackButton.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button2",
+            "Y": 396,
+            "Width": 394,
+            "Height": 84,
+            "Pressed": "SaveButton.png",
+            "Released": "SaveButton.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Number_3",
+            "X": 550,
+            "Y": 36,
+            "Width": 150,
+            "Height": 118,
+            "TextId": "__SingleUse_OL3R",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 14,
+              "Green": 161,
+              "Blue": 230
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_P586",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Number_2_1",
+            "X": 550,
+            "Y": 284,
+            "Width": 150,
+            "Height": 118,
+            "TextId": "__SingleUse_95M7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 14,
+              "Green": 161,
+              "Blue": 230
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_JJYN",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "button3",
+            "X": 457,
+            "Y": 291,
+            "Width": 93,
+            "Height": 68,
+            "Pressed": "MinusButton.png",
+            "Released": "MinusButton.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button3_1",
+            "X": 457,
+            "Y": 43,
+            "Width": 93,
+            "Height": 68,
+            "Pressed": "MinusButton.png",
+            "Released": "MinusButton.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button4",
+            "X": 702,
+            "Y": 43,
+            "Width": 92,
+            "Height": 68,
+            "Pressed": "PlusButton.png",
+            "Released": "PlusButton.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button4_1",
+            "X": 702,
+            "Y": 291,
+            "Width": 92,
+            "Height": 68,
+            "Pressed": "PlusButton.png",
+            "Released": "PlusButton.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Main"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "SavePress"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button3_1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "DripRateMinusPress"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button4"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "DripRatePlusPress"
+            }
+          },
+          {
+            "InteractionName": "Interaction5",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button3"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "ShutdownDelayMinusPress"
+            }
+          },
+          {
+            "InteractionName": "Interaction6",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button4_1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "ShutdownDelayPlusPress"
+            }
+          },
+          {
+            "InteractionName": "Interaction7",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButton1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "PumpShutdownPress"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Protection_Disable_Confirmation_Screen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "PumpShutdownWarningBackround.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "Y": 396,
+            "Width": 394,
+            "Height": 84,
+            "Pressed": "ContinueButton.png",
+            "Released": "ContinueButton.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button3",
+            "X": 406,
+            "Y": 396,
+            "Width": 394,
+            "Height": 84,
+            "Pressed": "CancelButton.png",
+            "Released": "CancelButton.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "ContinuePress"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button3"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Settings"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "DripperDisplay",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 24,
+    "StartupScreenName": "Startup",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      24
+    ],
+    "AvailableLCDs": {
+      "24": "LCDGPU2D"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32U5",
+    "SubFamily": "STM32U5F9/5G9",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m33",
+    "ProjectFile": "../Riverdi_50STM32U5G9.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [
+      "GPU2D"
+    ],
+    "AdditionalFeatures": [
+      "GPU2DVector",
+      "VectorFonts",
+      "Video"
+    ]
+  },
+  "Version": "4.26.1",
+  "CreatedBy": "4.26.1"
+}

@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmpv4.c:34:5:net_icmpv4_create	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmpv4.c:424:25:icmpv4_handle_echo_request	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmpv4.c:52:5:net_icmpv4_finalize	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmpv4.c:528:5:net_icmpv4_send_error	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmpv4.c:624:18:net_icmpv4_input	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/icmpv4.c:787:6:net_icmpv4_init	32	static

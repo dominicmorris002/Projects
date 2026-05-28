@@ -1,0 +1,16 @@
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/log_msg.h:26:20:z_log_msg_simple_create_0.constprop	32	static
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/kernel.h:1081:19:k_mutex_lock.constprop.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/kernel.h:1098:19:k_mutex_unlock.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_client.c:244:12:mbc_send_cmd$part$0	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_client.c:244:12:mbc_send_cmd	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_client.c:293:5:modbus_read_coils	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_client.c:318:5:modbus_read_dinputs	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_client.c:343:5:modbus_read_holding_regs	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_client.c:370:5:modbus_read_holding_regs_fp	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_client.c:397:5:modbus_read_input_regs	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_client.c:422:5:modbus_write_coil	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_client.c:453:5:modbus_write_holding_reg	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_client.c:477:5:modbus_request_diagnostic	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_client.c:502:5:modbus_write_coils	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_client.c:546:5:modbus_write_holding_regs	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/modbus/modbus_client.c:594:5:modbus_write_holding_regs_fp	64	static

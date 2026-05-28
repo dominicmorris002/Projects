@@ -1,0 +1,14 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/connection.c:326:12:net_conn_change_local	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/connection.c:279:12:net_conn_change_remote	32	static
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/kernel.h:1081:19:k_mutex_lock.constprop.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/kernel.h:1098:19:k_mutex_unlock.constprop.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/connection.c:145:13:conn_set_unused	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/connection.c:380:5:net_conn_register	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/connection.c:451:5:net_conn_unregister	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/connection.c:474:5:net_conn_update	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/connection.c:705:6:net_conn_packet_input	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/connection.c:764:18:net_conn_raw_ip_input	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/connection.c:839:18:net_conn_can_input	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/connection.c:848:18:net_conn_input	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/connection.c:1076:6:net_conn_foreach	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/ip/connection.c:1089:6:net_conn_init	32	static

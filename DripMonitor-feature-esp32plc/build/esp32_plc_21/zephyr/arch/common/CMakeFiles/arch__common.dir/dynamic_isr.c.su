@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/common/dynamic_isr.c:12:13:z_isr_install	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/arch/common/dynamic_isr.c:38:12:arch_irq_connect_dynamic	32	static

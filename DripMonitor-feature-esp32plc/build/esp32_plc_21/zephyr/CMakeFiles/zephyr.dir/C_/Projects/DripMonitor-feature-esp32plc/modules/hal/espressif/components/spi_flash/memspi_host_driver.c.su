@@ -1,0 +1,12 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/memspi_host_driver.c:117:11:memspi_host_read_status_hs	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/memspi_host_driver.c:211:5:memspi_host_write_data_slicer	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/memspi_host_driver.c:235:5:memspi_host_read_data_slicer	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/memspi_host_driver.c:93:11:memspi_host_read_id_hs	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/memspi_host_driver.c:134:11:memspi_host_flush_cache	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/memspi_host_driver.c:69:11:memspi_host_init_pointers	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/memspi_host_driver.c:142:6:memspi_host_erase_chip	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/memspi_host_driver.c:150:6:memspi_host_erase_sector	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/memspi_host_driver.c:162:6:memspi_host_erase_block	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/memspi_host_driver.c:174:6:memspi_host_program_page	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/memspi_host_driver.c:187:11:memspi_host_read	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/spi_flash/memspi_host_driver.c:200:11:memspi_host_set_write_protect	64	static

@@ -1,0 +1,6 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/esp32/esp_efuse_utility.c:61:6:esp_efuse_utility_clear_program_registers	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/esp32/esp_efuse_utility.c:66:11:esp_efuse_utility_check_errors	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/esp32/esp_efuse_utility.c:176:11:esp_efuse_utility_apply_34_encoding	64	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/esp32/esp_efuse_utility.c:77:11:esp_efuse_utility_burn_chip_opt	96	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/esp32/esp_efuse_utility.c:72:11:esp_efuse_utility_burn_chip	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/efuse/esp32/esp_efuse_utility.c:225:11:esp_efuse_utility_apply_new_coding_scheme	80	static

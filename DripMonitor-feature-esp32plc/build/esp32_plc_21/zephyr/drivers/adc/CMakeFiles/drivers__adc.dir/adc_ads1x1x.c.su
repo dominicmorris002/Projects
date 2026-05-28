@@ -1,0 +1,10 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/include/zephyr/drivers/i2c.h:875:19:z_impl_i2c_transfer	32	static
+C:/Projects/DripMonitor-feature-esp32plc/build/esp32_plc_21/zephyr/include/generated/zephyr/syscalls/kernel.h:1215:20:k_sem_give	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/adc/adc_ads1x1x.c:749:12:ads1x1x_init	96	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/adc/adc_ads1x1x.c:202:12:ads1x1x_read_reg.isra	112	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/adc/adc_ads1x1x.c:220:12:ads1x1x_write_reg.constprop.isra	96	dynamic,bounded
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/adc/adc_ads1x1x.c:547:13:adc_context_start_sampling	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/adc/adc_ads1x1x.c:641:12:ads1x1x_read	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/adc/adc_context.h:128:13:adc_context_on_timer_expired	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/adc/adc_ads1x1x.c:382:12:ads1x1x_channel_setup	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/adc/adc_ads1x1x.c:646:13:ads1x1x_acquisition_thread	48	static

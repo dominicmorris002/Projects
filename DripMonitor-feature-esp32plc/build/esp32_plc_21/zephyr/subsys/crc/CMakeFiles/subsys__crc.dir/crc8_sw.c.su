@@ -1,0 +1,3 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/crc/crc8_sw.c:21:16:crc8_ccitt	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/crc/crc8_sw.c:34:16:crc8_rohc	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/crc/crc8_sw.c:47:16:crc8	32	static

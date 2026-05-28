@@ -1,0 +1,9 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mailbox.c:213:12:mbox_message_put	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mailbox.c:156:13:mbox_message_dispose	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mailbox.c:54:12:init_mbox_module	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mailbox.c:87:6:k_mbox_init	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mailbox.c:298:5:k_mbox_put	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mailbox.c:314:6:k_mbox_async_put	48	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mailbox.c:338:6:k_mbox_data_get	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mailbox.c:370:12:mbox_message_data_check.isra	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/kernel/mailbox.c:385:5:k_mbox_get	32	static

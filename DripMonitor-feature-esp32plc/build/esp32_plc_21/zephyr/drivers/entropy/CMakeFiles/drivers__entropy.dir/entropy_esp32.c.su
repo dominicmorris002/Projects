@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/entropy/entropy_esp32.c:73:12:entropy_esp32_get_entropy	64	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/drivers/entropy/entropy_esp32.c:91:12:entropy_esp32_init	32	static

@@ -1,0 +1,3 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_rom/esp32/include/esp32/rom/cache.h:137:61:Cache_Flush	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/cache_esp32.c:18:6:cache_register_writeback	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/components/esp_mm/cache_esp32.c:23:6:cache_sync	32	static

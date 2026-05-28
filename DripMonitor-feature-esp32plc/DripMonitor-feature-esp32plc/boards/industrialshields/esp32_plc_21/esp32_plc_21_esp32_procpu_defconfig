@@ -1,0 +1,49 @@
+# SPDX-License-Identifier: Apache-2.0
+
+# --- Console / serial ---
+CONFIG_CONSOLE=y
+CONFIG_SERIAL=y
+CONFIG_UART_CONSOLE=y
+CONFIG_UART_INTERRUPT_DRIVEN=y
+
+# --- Buses required by on-board peripherals ---
+CONFIG_GPIO=y
+CONFIG_I2C=y
+CONFIG_SPI=y
+
+# --- On-board peripheral drivers (always present on the PLC 21 hardware) ---
+CONFIG_GPIO_MCP230XX=y      # I0_0..I0_4 expander (MCP23008 @ 0x21)
+CONFIG_ADC=y
+CONFIG_ADC_ADS1X1X=y        # I0_7..I0_12 ADS1015 ADCs
+CONFIG_PWM=y
+CONFIG_PWM_PCA9685=y        # Q0_0..Q0_7 output driver
+CONFIG_COUNTER=y
+CONFIG_RTC=y
+CONFIG_MFD=y                # required by RTC_DS3231 (uses MFD parent node)
+CONFIG_RTC_DS3231=y         # battery-backed RTC
+
+# --- Networking via WIZnet W5500 SPI Ethernet ---
+# The W5500 INT pin is not exposed on the PLC 21 PCB, so the driver must
+# run in polled mode.
+CONFIG_NETWORKING=y
+CONFIG_NET_L2_ETHERNET=y
+CONFIG_ETH_DRIVER=y
+CONFIG_ETH_W5500=y
+
+# --- Watchdog: required for the fail-safe behaviour of the PCA9685 outputs.
+# If the CPU hangs, the hardware watchdog reboots the chip; the firmware
+# clears all PCA9685 outputs early in `SYS_INIT()` so the loads are forced
+# OFF within seconds of any lock-up.
+CONFIG_WATCHDOG=y
+CONFIG_WDT_DISABLE_AT_BOOT=n
+
+# --- Storage (NVS lives in the `storage` partition defined by the SoC dtsi). ---
+CONFIG_FLASH=y
+CONFIG_FLASH_MAP=y
+
+# --- Misc ---
+CONFIG_ENTROPY_GENERATOR=y
+# Note: CONFIG_HW_STACK_PROTECTION is unavailable on Xtensa LX6 (ESP32)
+# because the architecture does not select ARCH_HAS_STACK_PROTECTION.
+# Stack overrun detection is instead provided by CONFIG_STACK_SENTINEL or
+# CONFIG_THREAD_ANALYZER, which can be enabled in prj.conf if needed.

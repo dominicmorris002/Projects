@@ -1,0 +1,2 @@
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/common/console_init.c:26:6:esp_console_deinit	32	static
+C:/Projects/DripMonitor-feature-esp32plc/modules/hal/espressif/zephyr/common/console_init.c:35:6:esp_console_init	32	static

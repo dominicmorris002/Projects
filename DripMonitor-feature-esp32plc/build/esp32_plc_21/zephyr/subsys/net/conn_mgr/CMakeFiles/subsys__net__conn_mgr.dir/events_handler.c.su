@@ -1,0 +1,3 @@
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/events_handler.c:115:13:conn_mgr_ipv4_events_handler	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/events_handler.c:20:13:conn_mgr_iface_events_handler	32	static
+C:/Projects/DripMonitor-feature-esp32plc/zephyr/subsys/net/conn_mgr/events_handler.c:173:6:conn_mgr_init_events_handler	32	static
