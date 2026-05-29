@@ -480,6 +480,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/modbus_master.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/hmi_settings_cache.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/hmi_settings_cache.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/Core/usb_otg.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Core/Src/usb_otg.c</locationURI>

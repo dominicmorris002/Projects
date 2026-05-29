@@ -12,8 +12,11 @@ extern UART_HandleTypeDef huart6;
 #define MB_UART              (&huart6)
 #define MB_TX_TIMEOUT_MS     50
 #define MB_RX_TIMEOUT_MS     200
-/* Modbus RTU T3.5 at 19200 ≈ 2 ms; allow transceiver turnaround */
-#define MB_TURNAROUND_MS     3
+#define MB_TURNAROUND_MS     8
+#define MB_INTER_FRAME_MS    25
+
+static uint32_t s_pause_until_ms = 0;
+static volatile uint8_t s_bus_locked = 0;
 
 static uint16_t crc16(const uint8_t *buf, uint16_t len)
 {
@@ -34,8 +37,24 @@ static uint16_t crc16(const uint8_t *buf, uint16_t len)
 static void mb_flush_rx(void)
 {
     uint8_t discard;
-    while (HAL_UART_Receive(MB_UART, &discard, 1, 1) == HAL_OK) {
+    int guard = 64;
+
+    while (guard-- > 0 && HAL_UART_Receive(MB_UART, &discard, 1, 1) == HAL_OK) {
     }
+}
+
+static bool mb_lock_bus(void)
+{
+    if (s_bus_locked) {
+        return false;
+    }
+    s_bus_locked = 1;
+    return true;
+}
+
+static void mb_unlock_bus(void)
+{
+    s_bus_locked = 0;
 }
 
 static bool mb_transaction(const uint8_t *frame, uint8_t frame_len,
@@ -68,22 +87,33 @@ static bool mb_transaction(const uint8_t *frame, uint8_t frame_len,
     if (total > resp_max) {
         return false;
     }
+
     if (total > 3 &&
         HAL_UART_Receive(MB_UART, resp + 3, total - 3, MB_RX_TIMEOUT_MS) != HAL_OK) {
         return false;
     }
 
-    if (resp[0] != MODBUS_NODE_ID) {
-        return false;
-    }
-    if (resp[1] != frame[1]) {
+    if (resp[0] != MODBUS_NODE_ID || resp[1] != frame[1]) {
         return false;
     }
 
-    uint16_t rcrc = crc16(resp, total - 2);
-    uint16_t gcrc = (uint16_t)resp[total - 2]
-                  | ((uint16_t)resp[total - 1] << 8);
+    const uint16_t rcrc = crc16(resp, total - 2);
+    const uint16_t gcrc = (uint16_t)resp[total - 2]
+                        | ((uint16_t)resp[total - 1] << 8);
+
     return (rcrc == gcrc);
+}
+
+static bool mb_transaction_locked(const uint8_t *frame, uint8_t frame_len,
+                                  uint8_t *resp, uint8_t resp_max)
+{
+    if (!mb_lock_bus()) {
+        return false;
+    }
+
+    const bool ok = mb_transaction(frame, frame_len, resp, resp_max);
+    mb_unlock_bus();
+    return ok;
 }
 
 static void build_frame(uint8_t *frame, uint8_t fc, uint16_t addr, uint16_t val_or_count)
@@ -104,20 +134,45 @@ void mb_init(void)
     mb_flush_rx();
 }
 
+bool mb_poll_paused(void)
+{
+    return HAL_GetTick() < s_pause_until_ms;
+}
+
+void mb_pause_for_ms(uint32_t ms)
+{
+    const uint32_t until = HAL_GetTick() + ms;
+    if (until > s_pause_until_ms) {
+        s_pause_until_ms = until;
+    }
+}
+
 MB_PollResult mb_poll(void)
 {
     MB_PollResult out = {};
+
+    if (mb_poll_paused() || s_bus_locked) {
+        return out;
+    }
+
+    if (!mb_lock_bus()) {
+        return out;
+    }
+
     const uint8_t COUNT = 6u;
-    const uint8_t RESP_LEN = 3u + COUNT * 2u + 2u;
+    const uint8_t RESP_LEN = (uint8_t)(3u + COUNT * 2u + 2u);
 
     uint8_t frame[8];
-    uint8_t resp[13] = {0};
+    uint8_t resp[24];
 
     build_frame(frame, 0x04, MB_INP_STATUS, COUNT);
 
     if (!mb_transaction(frame, 8, resp, RESP_LEN)) {
+        mb_unlock_bus();
         return out;
     }
+
+    mb_unlock_bus();
 
     if (resp[2] != COUNT * 2u) {
         return out;
@@ -139,21 +194,25 @@ bool mb_write_holding_u16(uint16_t addr, uint16_t val)
 {
     uint8_t frame[8], resp[8];
     build_frame(frame, 0x06, addr, val);
-    return mb_transaction(frame, 8, resp, 8);
+    const bool ok = mb_transaction_locked(frame, 8, resp, 8);
+    HAL_Delay(MB_INTER_FRAME_MS);
+    return ok;
 }
 
 bool mb_set_run(bool run)
 {
     uint8_t frame[8], resp[8];
     build_frame(frame, 0x06, MB_HOLD_RUN, run ? 1u : 0u);
-    return mb_transaction(frame, 8, resp, 8);
+    return mb_transaction_locked(frame, 8, resp, 8);
 }
 
-void mb_send_prime(void)
+bool mb_send_prime(void)
 {
     uint8_t frame[8], resp[8];
     build_frame(frame, 0x06, MB_HOLD_MODE, 1u);
-    (void)mb_transaction(frame, 8, resp, 8);
+    const bool ok = mb_transaction_locked(frame, 8, resp, 8);
+    HAL_Delay(MB_INTER_FRAME_MS);
+    return ok;
 }
 
 bool mb_set_drip_rate(float dpm)
@@ -165,12 +224,16 @@ bool mb_set_drip_rate(float dpm)
     uint8_t frame[8], resp[8];
     uint16_t val = (uint16_t)(dpm * 10.0f + 0.5f);
     build_frame(frame, 0x06, MB_HOLD_DRIP_RATE_SP, val);
-    return mb_transaction(frame, 8, resp, 8);
+    return mb_transaction_locked(frame, 8, resp, 8);
 }
 
 #else
 
 void mb_init(void) {}
+
+bool mb_poll_paused(void) { return false; }
+
+void mb_pause_for_ms(uint32_t) {}
 
 MB_PollResult mb_poll(void)
 {
@@ -179,7 +242,7 @@ MB_PollResult mb_poll(void)
 
 bool mb_set_run(bool) { return true; }
 
-void mb_send_prime(void) {}
+bool mb_send_prime(void) { return true; }
 
 bool mb_set_drip_rate(float) { return true; }
 

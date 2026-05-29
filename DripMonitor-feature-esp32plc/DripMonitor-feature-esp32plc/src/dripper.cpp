@@ -551,6 +551,10 @@ static void lowDripRateAlarm(bool reset){
  * 
  **************************************************************/
 static void lowOilAlarm(){
+    if (!sts_expanderInputsOk) {
+        alm_lowOil = false;
+        return;
+    }
     alm_lowOil = inp_lowOil;
 }
 

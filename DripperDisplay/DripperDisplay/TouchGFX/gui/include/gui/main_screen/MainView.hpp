@@ -12,22 +12,39 @@ public:
     virtual ~MainView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void handleTickEvent();
+    virtual void handleClickEvent(const touchgfx::ClickEvent &evt);
 
     virtual void PrimeOilerPress();
     virtual void RunOilerPress();
+    virtual void SetpointPress();
 
-    void handlePollResult(const MB_PollResult &result);  // FIX: inside the class
+    void handlePollResult(const MB_PollResult &result);
 
-    void updateDripRate(int value);
-    void updateSetpoint(int value);
-    void updateStatusText(const char* text);
-    void updateAlarmText(const char* text);
-    void updateNetworkText(const char* text);
+    void updateDripRateTenths(uint16_t tenths);
+    void updateSetpoint(int dpm);
+    void updateStatusText(const char *text);
+    void updateAlarmText(uint16_t alarms);
+    void updateNetworkText(bool connected);
 
 protected:
-    bool oilerRunning;
-    int  dripRate;
-    int  setpoint;
+    void applyPollResult(const MB_PollResult &result);
+
+    bool     oilerRunning;
+    uint16_t dripRateTenths;
+    int      setpointDpm;
+    uint16_t lastAlarms;
+    bool     networkShown;
+    bool     alarmBellVisible;
+    uint32_t lastPrimeSendMs;
+
+    static const uint16_t ALARM_LINE_SIZE   = 20;
+    static const uint16_t NETWORK_LINE_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar alarmLineBuffer[ALARM_LINE_SIZE];
+    touchgfx::Unicode::UnicodeChar networkLineBuffer[NETWORK_LINE_SIZE];
+
+    char    lastStatusBuf[16];
+    uint8_t commFailStreak;
 };
 
 #endif // MAINVIEW_HPP

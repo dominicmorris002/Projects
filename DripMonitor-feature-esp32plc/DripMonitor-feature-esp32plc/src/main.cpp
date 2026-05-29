@@ -5,7 +5,6 @@
 #include <zephyr/logging/log.h>
 #include <zephyr/drivers/uart.h>
 #include <zephyr/device.h>
-#include <cstdio>
 #include <cstring>
 #include <cstdlib>
 #include "modbus_rtu.h"
@@ -313,25 +312,9 @@ int main() {
     if (check_for_provisioning_request()) {
         provisioning_menu();
     }
-
-    uart_print("\r\nStarting normal operation...\r\n");
-
-    {
-        int mb = modbus_rtu_init();
-        if (mb != 0) {
-            uart_print("Modbus RTU init failed (err=");
-            char errbuf[12];
-            snprintf(errbuf, sizeof(errbuf), "%d", mb);
-            uart_print(errbuf);
-            uart_print(")\r\n");
-        } else {
-            uart_print("Modbus RTU server ready (slave 1, 19200 8E1)\r\n");
-        }
-    }
-
-    // Release worker threads only after Modbus is up
+    
+    // Provisioning complete - allow other threads to start
     provisioning_mode = false;
-    uart_print("Application threads started.\r\n");
     LOG_INF("Provisioning complete. Starting normal operation...");
 
     // Start Modbus RTU server

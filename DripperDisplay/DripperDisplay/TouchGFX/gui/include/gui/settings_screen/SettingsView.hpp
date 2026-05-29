@@ -21,12 +21,16 @@ public:
     virtual void PumpShutdownPress();
 
     void loadFromPlc();
+    void refreshFromPlc();
+    void applyCachedSettings();
 
 private:
     int dripRateSetpoint;
     int shutdownDelay;
     bool pumpShutdownEnabled;
     int savedTicksRemaining;
+    int lastDisplayedDrip;
+    int lastDisplayedDelay;
 
     void updateDripRateDisplay();
     void updateShutdownDelayDisplay();

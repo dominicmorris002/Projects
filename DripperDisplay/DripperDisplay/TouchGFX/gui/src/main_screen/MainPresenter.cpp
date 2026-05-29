@@ -16,9 +16,5 @@ void MainPresenter::deactivate()
 
 void MainPresenter::onPollResult(const MB_PollResult &result)
 {
-    if (result.ok) {
-        view.handlePollResult(result);
-    } else {
-        view.updateStatusText("COMM ERR");
-    }
+    view.handlePollResult(result);
 }

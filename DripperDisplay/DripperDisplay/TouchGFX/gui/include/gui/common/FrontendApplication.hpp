@@ -19,11 +19,14 @@ public:
         FrontendApplicationBase::handleTickEvent();
     }
 
+    void gotoMainScreenNoTransition();
     void gotoProtection_Disable_Confirmation_ScreenNoTransition();
 
 protected:
+    touchgfx::Callback<FrontendApplication> mainNoTransCallback;
     touchgfx::Callback<FrontendApplication> protectionTransitionCallback;
 
+    void gotoMainScreenNoTransitionImpl();
     void gotoProtection_Disable_Confirmation_ScreenNoTransitionImpl();
 };
 

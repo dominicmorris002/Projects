@@ -68,16 +68,20 @@ typedef struct {
 // Call once at startup (sets up UART for Modbus RTU)
 void     mb_init(void);
 
-// Read all 4 input registers from the ESP32 in one shot.
+// Read all input registers from the ESP32 in one shot.
 // Returns result.ok == false if comms timed out or CRC failed.
 MB_PollResult mb_poll(void);
+
+// Pause background polls until HAL_GetTick() passes this window.
+void     mb_pause_for_ms(uint32_t ms);
+bool     mb_poll_paused(void);
 
 // Write the run command — true = RUN, false = STOP
 // Returns false if write failed
 bool     mb_set_run(bool run);
 
 // Send a prime pulse (holds MB_HOLD_MODE=1 for one cycle)
-void     mb_send_prime(void);
+bool     mb_send_prime(void);
 
 // Write a new drip rate setpoint (pass actual dpm, e.g. 20.5)
 // Returns false if write failed

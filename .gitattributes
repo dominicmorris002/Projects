@@ -1,0 +1,2 @@
+*.bin filter=lfs diff=lfs merge=lfs -text
+DripperDisplay/DripperDisplay/STM32CubeIDE/Debug/Riverdi_50STM32U5G9.bin filter=lfs diff=lfs merge=lfs -text
