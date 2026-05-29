@@ -1,4 +1,5 @@
 #include <gui/main_screen/MainView.hpp>
+#include <gui/common/FrontendApplication.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 #include <images/BitmapDatabase.hpp>
 #include <touchgfx/Unicode.hpp>
@@ -35,7 +36,8 @@ static void formatDpmInteger(uint16_t tenths, touchgfx::Unicode::UnicodeChar *bu
 } // namespace
 
 MainView::MainView()
-    : oilerRunning(false),
+    : settingsButtonCallback(this, &MainView::onSettingsButtonPressed),
+      oilerRunning(false),
       dripRateTenths(0xFFFF),
       setpointDpm(-1),
       lastAlarms(0xFFFF),
@@ -73,6 +75,15 @@ void MainView::setupScreen()
     updateAlarmText(0);
     updateNetworkText(false);
     updateStatusText("STANDBY");
+
+    button3.setAction(settingsButtonCallback);
+
+    invalidate();
+}
+
+void MainView::onSettingsButtonPressed(const touchgfx::AbstractButton &)
+{
+    static_cast<FrontendApplication &>(application()).gotoSettingsScreenNoTransition();
 }
 
 void MainView::tearDownScreen()
@@ -192,7 +203,7 @@ void MainView::PrimeOilerPress()
 
 void MainView::SetpointPress()
 {
-    application().gotoSettingsScreenWipeTransitionEast();
+    static_cast<FrontendApplication &>(application()).gotoSettingsScreenNoTransition();
 }
 
 void MainView::handleClickEvent(const touchgfx::ClickEvent &evt)

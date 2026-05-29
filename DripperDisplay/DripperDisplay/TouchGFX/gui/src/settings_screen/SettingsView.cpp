@@ -12,7 +12,8 @@
 static const int SAVED_DISPLAY_TICKS = 45;
 
 SettingsView::SettingsView()
-    : dripRateSetpoint(20),
+    : backButtonCallback(this, &SettingsView::onBackButtonPressed),
+      dripRateSetpoint(20),
       shutdownDelay(5),
       pumpShutdownEnabled(true),
       savedTicksRemaining(0),
@@ -30,8 +31,17 @@ void SettingsView::setupScreen()
         touchgfx::Bitmap(BITMAP_ONBUTTON_ID)
     );
 
+    button1.setAction(backButtonCallback);
+
     refreshFromPlc();
     savedTicksRemaining = 0;
+
+    invalidate();
+}
+
+void SettingsView::onBackButtonPressed(const touchgfx::AbstractButton &)
+{
+    static_cast<FrontendApplication &>(application()).gotoMainScreenNoTransition();
 }
 
 void SettingsView::tearDownScreen()

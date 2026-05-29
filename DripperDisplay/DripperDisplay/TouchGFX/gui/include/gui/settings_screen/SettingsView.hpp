@@ -35,6 +35,9 @@ private:
     void updateDripRateDisplay();
     void updateShutdownDelayDisplay();
     void updateToggleDisplay();
+    void onBackButtonPressed(const touchgfx::AbstractButton &src);
+
+    touchgfx::Callback<SettingsView, const touchgfx::AbstractButton &> backButtonCallback;
 };
 
 #endif

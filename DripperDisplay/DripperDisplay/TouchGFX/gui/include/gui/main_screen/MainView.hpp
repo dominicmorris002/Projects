@@ -29,6 +29,9 @@ public:
 
 protected:
     void applyPollResult(const MB_PollResult &result);
+    void onSettingsButtonPressed(const touchgfx::AbstractButton &src);
+
+    touchgfx::Callback<MainView, const touchgfx::AbstractButton &> settingsButtonCallback;
 
     bool     oilerRunning;
     uint16_t dripRateTenths;
