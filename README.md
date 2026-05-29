@@ -20,3 +20,18 @@ west flash -d build\esp32_plc_21
 ```powershell
 python -m serial.tools.miniterm COM22 115200
 ```
+
+
+
+
+
+
+
+### Update Changes From Computer to Github
+
+```powershell
+cd C:\Projects
+git add .
+git commit -m "Update project"
+git push
+```
